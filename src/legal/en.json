@@ -1,0 +1,115 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: 13 October 2026",
+    "intro": "This notice explains how your personal data is processed when you use the Timegami app, under the EU General Data Protection Regulation (GDPR) and Turkey's Personal Data Protection Law No. 6698 (KVKK).",
+    "sections": [
+      {
+        "heading": "1. Data controller",
+        "paragraphs": ["Enes Günel", "Contact: enesgunel@enesgunel.com"]
+      },
+      {
+        "heading": "2. What data we process",
+        "paragraphs": [
+          "Account ID: When you first open the app, a random anonymous user ID is created for you. We do not ask for your email address, phone number or real name.",
+          "Room details: The name, icon and settings of rooms you create or join; your nickname in each room and the colour assigned to you.",
+          "Marks: For each mark, the cell, the time of the mark, your time zone at that moment, whether it was added live or manually, and your optional note.",
+          "Data on your device: Your language, appearance and reminder preferences, the badges you have seen and your sign-in session are stored only on your phone.",
+          "What we do not collect: We do not collect location, contacts, photos, advertising IDs, or analytics or tracking data. Reminder notifications are scheduled on your phone; no data is sent to our servers for them."
+        ]
+      },
+      {
+        "heading": "3. Purposes and legal bases",
+        "paragraphs": [
+          "We process your data only to provide the app: to show rooms and grids, to share your marks with your room mates, to calculate progress, badges and rankings, and to keep the service secure.",
+          "The legal basis is the performance of the contract formed when you use the app (GDPR Art. 6(1)(b), KVKK Art. 5(2)(c)). For security and preventing abuse we also rely on our legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f)).",
+          "We do not use your data for marketing, advertising or profiling, and we do not sell it."
+        ]
+      },
+      {
+        "heading": "4. Who can see your data",
+        "paragraphs": [
+          "Your nickname, colour, marks and notes in a room are visible to the other members of that room. Rooms are not public; they can only be joined with an invite code.",
+          "We recommend not writing sensitive information, such as health details, in your notes."
+        ]
+      },
+      {
+        "heading": "5. Service providers and international transfers",
+        "paragraphs": [
+          "Your data is stored with Google's Firebase services (Firebase Authentication and Cloud Firestore), acting as our data processor. Cloud Firestore data is kept on servers in the European Union (Belgium and the Netherlands); anonymous authentication may be processed on Google's global infrastructure.",
+          "Your data may therefore be transferred outside your country. Such transfers are made in line with the safeguards required by the GDPR and KVKK Art. 9."
+        ]
+      },
+      {
+        "heading": "6. Retention and deletion",
+        "paragraphs": [
+          "Your data is kept until you delete your account.",
+          "\"Delete my account and data\" in Settings permanently deletes all your marks, room memberships and your account. Rooms you own with no other members are deleted too; ownership of rooms with other members passes to a remaining member.",
+          "Deleting the app from your phone does not by itself delete data on our servers."
+        ]
+      },
+      {
+        "heading": "7. Your rights",
+        "paragraphs": [
+          "You have the right to access, rectify and erase your data, to restrict or object to its processing, and to data portability (GDPR). Under KVKK Art. 11 you may also learn whether and why your data is processed, who it is transferred to, request that recipients be notified of corrections or erasure, object to adverse results of automated analysis, and claim compensation for unlawful processing.",
+          "Send requests to enesgunel@enesgunel.com; we reply within 30 days. Because accounts are anonymous, we may ask for a room's invite code and your nickname to verify your request.",
+          "You may also lodge a complaint with the data protection authority of your country, or with Turkey's Personal Data Protection Board."
+        ]
+      },
+      {
+        "heading": "8. Children",
+        "paragraphs": [
+          "Timegami is not intended for children under 13. If your country sets a higher age for digital services and you are below it, you should use the app only with your parent's permission."
+        ]
+      },
+      {
+        "heading": "9. Changes",
+        "paragraphs": ["We may update this notice from time to time. We will let you know in the app about important changes."]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "updated": "Last updated: 13 October 2026",
+    "intro": "By using Timegami you agree to these terms.",
+    "sections": [
+      {
+        "heading": "1. The service",
+        "paragraphs": [
+          "Timegami is provided free of charge and \"as is\". We may change, add or remove features, and we do not guarantee that the service will be uninterrupted or error-free."
+        ]
+      },
+      {
+        "heading": "2. Rules of conduct",
+        "paragraphs": [
+          "Room names, nicknames and notes must not contain illegal content, hate speech, harassment, threats, obscenity or other people's personal information.",
+          "We may remove content and accounts that break these rules. You can report inappropriate content or abuse to enesgunel@enesgunel.com."
+        ]
+      },
+      {
+        "heading": "3. Honesty",
+        "paragraphs": ["Timegami is a game built on trust. You are responsible for the accuracy of your marks."]
+      },
+      {
+        "heading": "4. Age limit",
+        "paragraphs": ["You must be at least 13 years old to use Timegami."]
+      },
+      {
+        "heading": "5. Liability",
+        "paragraphs": [
+          "To the extent permitted by applicable law, we are not liable for indirect damages arising from the use of the app, including data loss. Your mandatory rights as a consumer remain unaffected."
+        ]
+      },
+      {
+        "heading": "6. Governing law",
+        "paragraphs": [
+          "These terms are governed by the laws of the Republic of Turkey. If you live in the European Union, the mandatory consumer protection rules of your country also apply."
+        ]
+      },
+      {
+        "heading": "7. Contact",
+        "paragraphs": ["Enes Günel · enesgunel@enesgunel.com"]
+      }
+    ]
+  }
+}

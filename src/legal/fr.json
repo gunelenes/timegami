@@ -1,0 +1,115 @@
+{
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 13 octobre 2026",
+    "intro": "Cette notice explique comment tes données personnelles sont traitées lorsque tu utilises l'app Timegami, conformément au Règlement général sur la protection des données de l'UE (RGPD) et à la loi turque n° 6698 sur la protection des données personnelles (KVKK).",
+    "sections": [
+      {
+        "heading": "1. Responsable du traitement",
+        "paragraphs": ["Enes Günel", "Contact : enesgunel@enesgunel.com"]
+      },
+      {
+        "heading": "2. Données traitées",
+        "paragraphs": [
+          "Identifiant de compte : à la première ouverture de l'app, un identifiant utilisateur anonyme et aléatoire est créé pour toi. Nous ne demandons ni ton adresse e-mail, ni ton numéro de téléphone, ni ton vrai nom.",
+          "Données des salons : le nom, l'icône et les réglages des salons que tu crées ou rejoins ; ton pseudo dans chaque salon et la couleur qui t'est attribuée.",
+          "Marques : pour chaque marque, la case, l'heure de la marque, ton fuseau horaire à ce moment-là, si elle a été ajoutée en direct ou à la main, et ta note facultative.",
+          "Données sur ton appareil : tes préférences de langue, d'apparence et de rappels, les badges déjà vus et ta session de connexion sont stockés uniquement sur ton téléphone.",
+          "Ce que nous ne collectons pas : ni localisation, ni contacts, ni photos, ni identifiant publicitaire, ni données d'analyse ou de suivi. Les rappels sont programmés sur ton téléphone ; aucune donnée n'est envoyée à nos serveurs pour cela."
+        ]
+      },
+      {
+        "heading": "3. Finalités et bases légales",
+        "paragraphs": [
+          "Nous traitons tes données uniquement pour fournir le service de l'app : afficher les salons et les grilles, partager tes marques avec les membres de ton salon, calculer la progression, les badges et les classements, et assurer la sécurité du service.",
+          "La base légale est l'exécution du contrat conclu lorsque tu utilises l'app (art. 6.1.b RGPD, art. 5.2.c KVKK). Pour la sécurité et la prévention des abus, nous nous appuyons aussi sur notre intérêt légitime (art. 6.1.f RGPD, art. 5.2.f KVKK).",
+          "Nous n'utilisons pas tes données à des fins de marketing, de publicité ou de profilage, et nous ne les vendons pas."
+        ]
+      },
+      {
+        "heading": "4. Qui peut voir tes données",
+        "paragraphs": [
+          "Ton pseudo, ta couleur, tes marques et tes notes dans un salon sont visibles par les autres membres de ce salon. Les salons ne sont pas publics ; on ne peut les rejoindre qu'avec un code d'invitation.",
+          "Nous te recommandons de ne pas écrire d'informations sensibles, comme des données de santé, dans tes notes."
+        ]
+      },
+      {
+        "heading": "5. Prestataires et transferts internationaux",
+        "paragraphs": [
+          "Tes données sont stockées sur les services Firebase de Google (Firebase Authentication et Cloud Firestore), qui agit en tant que sous-traitant. Les données Cloud Firestore sont conservées sur des serveurs situés dans l'Union européenne (Belgique et Pays-Bas) ; l'authentification anonyme peut être traitée sur l'infrastructure mondiale de Google.",
+          "Tes données peuvent donc être transférées hors de ton pays. Ces transferts sont effectués conformément aux garanties exigées par le RGPD et l'art. 9 de la KVKK."
+        ]
+      },
+      {
+        "heading": "6. Conservation et suppression",
+        "paragraphs": [
+          "Tes données sont conservées jusqu'à la suppression de ton compte.",
+          "L'option « Supprimer mon compte et mes données » dans les Réglages supprime définitivement toutes tes marques, tes adhésions aux salons et ton compte. Les salons dont tu es propriétaire et qui n'ont pas d'autres membres sont également supprimés ; la propriété des salons ayant d'autres membres est transférée à un membre restant.",
+          "Supprimer l'app de ton téléphone ne supprime pas à elle seule les données sur nos serveurs."
+        ]
+      },
+      {
+        "heading": "7. Tes droits",
+        "paragraphs": [
+          "Tu as le droit d'accéder à tes données, de les rectifier et de les effacer, de limiter leur traitement ou de t'y opposer, ainsi qu'à la portabilité (RGPD). Selon l'art. 11 de la KVKK, tu peux aussi savoir si et pourquoi tes données sont traitées, à qui elles sont transférées, demander que les destinataires soient informés des rectifications ou suppressions, contester un résultat défavorable issu d'une analyse automatisée et demander réparation en cas de traitement illicite.",
+          "Envoie tes demandes à enesgunel@enesgunel.com ; nous répondons sous 30 jours. Les comptes étant anonymes, nous pourrons te demander le code d'invitation d'un salon et ton pseudo pour vérifier ta demande.",
+          "Tu peux aussi introduire une réclamation auprès de l'autorité de protection des données de ton pays ou de l'autorité turque de protection des données personnelles."
+        ]
+      },
+      {
+        "heading": "8. Enfants",
+        "paragraphs": [
+          "Timegami n'est pas destinée aux enfants de moins de 13 ans. Si ton pays fixe un âge plus élevé pour les services numériques et que tu es en dessous, tu dois utiliser l'app uniquement avec l'autorisation de tes parents."
+        ]
+      },
+      {
+        "heading": "9. Modifications",
+        "paragraphs": ["Nous pouvons mettre à jour cette notice de temps à autre. Nous t'informerons dans l'app de tout changement important."]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "updated": "Dernière mise à jour : 13 octobre 2026",
+    "intro": "En utilisant Timegami, tu acceptes ces conditions.",
+    "sections": [
+      {
+        "heading": "1. Le service",
+        "paragraphs": [
+          "Timegami est fournie gratuitement et « en l'état ». Nous pouvons modifier, ajouter ou retirer des fonctionnalités et ne garantissons pas un service sans interruption ni erreur."
+        ]
+      },
+      {
+        "heading": "2. Règles de conduite",
+        "paragraphs": [
+          "Les noms de salon, les pseudos et les notes ne doivent contenir ni contenu illégal, ni discours de haine, ni harcèlement, ni menaces, ni obscénités, ni données personnelles d'autrui.",
+          "Nous pouvons supprimer les contenus et les comptes qui enfreignent ces règles. Tu peux signaler un contenu inapproprié ou un abus à enesgunel@enesgunel.com."
+        ]
+      },
+      {
+        "heading": "3. Honnêteté",
+        "paragraphs": ["Timegami est un jeu fondé sur la confiance. Tu es responsable de l'exactitude de tes marques."]
+      },
+      {
+        "heading": "4. Âge minimum",
+        "paragraphs": ["Tu dois avoir au moins 13 ans pour utiliser Timegami."]
+      },
+      {
+        "heading": "5. Responsabilité",
+        "paragraphs": [
+          "Dans la mesure permise par la loi applicable, nous ne sommes pas responsables des dommages indirects liés à l'utilisation de l'app, y compris la perte de données. Tes droits impératifs de consommateur ne sont pas affectés."
+        ]
+      },
+      {
+        "heading": "6. Droit applicable",
+        "paragraphs": [
+          "Ces conditions sont régies par le droit de la République de Turquie. Si tu vis dans l'Union européenne, les règles impératives de protection des consommateurs de ton pays s'appliquent également."
+        ]
+      },
+      {
+        "heading": "7. Contact",
+        "paragraphs": ["Enes Günel · enesgunel@enesgunel.com"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "updated": "Zuletzt aktualisiert: 13. Oktober 2026",
+    "intro": "Diese Erklärung beschreibt, wie deine personenbezogenen Daten bei der Nutzung der App Timegami verarbeitet werden – nach der Datenschutz-Grundverordnung der EU (DSGVO) und dem türkischen Datenschutzgesetz Nr. 6698 (KVKK).",
+    "sections": [
+      {
+        "heading": "1. Verantwortlicher",
+        "paragraphs": ["Enes Günel", "Kontakt: enesgunel@enesgunel.com"]
+      },
+      {
+        "heading": "2. Welche Daten wir verarbeiten",
+        "paragraphs": [
+          "Konto-ID: Beim ersten Öffnen der App wird für dich eine zufällige anonyme Nutzer-ID erstellt. Wir fragen nicht nach deiner E-Mail-Adresse, Telefonnummer oder deinem echten Namen.",
+          "Raumdaten: Name, Symbol und Einstellungen der Räume, die du erstellst oder denen du beitrittst; dein Spitzname im jeweiligen Raum und die dir zugewiesene Farbe.",
+          "Einträge: Für jeden Eintrag die Zelle, der Zeitpunkt, deine Zeitzone in diesem Moment, ob er live oder manuell hinzugefügt wurde, und deine optionale Notiz.",
+          "Daten auf deinem Gerät: Deine Sprach-, Darstellungs- und Erinnerungseinstellungen, die bereits gesehenen Abzeichen und deine Anmeldesitzung werden nur auf deinem Telefon gespeichert.",
+          "Was wir nicht erheben: Wir erheben keine Standortdaten, Kontakte, Fotos, Werbe-IDs und keine Analyse- oder Tracking-Daten. Erinnerungen werden auf deinem Telefon geplant; dafür werden keine Daten an unsere Server gesendet."
+        ]
+      },
+      {
+        "heading": "3. Zwecke und Rechtsgrundlagen",
+        "paragraphs": [
+          "Wir verarbeiten deine Daten nur, um die App bereitzustellen: Räume und Raster anzeigen, deine Einträge mit deinen Mitspielern teilen, Fortschritt, Abzeichen und Ranglisten berechnen und den Dienst sicher halten.",
+          "Rechtsgrundlage ist die Erfüllung des Vertrags, der durch die Nutzung der App entsteht (Art. 6 Abs. 1 lit. b DSGVO, Art. 5 Abs. 2 lit. c KVKK). Für Sicherheit und die Verhinderung von Missbrauch stützen wir uns zudem auf unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO, Art. 5 Abs. 2 lit. f KVKK).",
+          "Wir nutzen deine Daten nicht für Marketing, Werbung oder Profilbildung und verkaufen sie nicht."
+        ]
+      },
+      {
+        "heading": "4. Wer deine Daten sehen kann",
+        "paragraphs": [
+          "Dein Spitzname, deine Farbe, deine Einträge und Notizen in einem Raum sind für die anderen Mitglieder dieses Raums sichtbar. Räume sind nicht öffentlich; man kann ihnen nur mit einem Einladungscode beitreten.",
+          "Wir empfehlen, keine sensiblen Informationen wie Gesundheitsangaben in Notizen zu schreiben."
+        ]
+      },
+      {
+        "heading": "5. Dienstleister und Übermittlung in Drittländer",
+        "paragraphs": [
+          "Deine Daten werden bei den Firebase-Diensten von Google (Firebase Authentication und Cloud Firestore) als unserem Auftragsverarbeiter gespeichert. Die Cloud-Firestore-Daten liegen auf Servern in der Europäischen Union (Belgien und Niederlande); die anonyme Anmeldung kann in der weltweiten Infrastruktur von Google verarbeitet werden.",
+          "Deine Daten können daher außerhalb deines Landes übermittelt werden. Dies geschieht im Einklang mit den Garantien, die die DSGVO und Art. 9 KVKK verlangen."
+        ]
+      },
+      {
+        "heading": "6. Speicherdauer und Löschung",
+        "paragraphs": [
+          "Deine Daten werden gespeichert, bis du dein Konto löschst.",
+          "Mit „Konto und Daten löschen“ in den Einstellungen werden alle deine Einträge, Raummitgliedschaften und dein Konto dauerhaft gelöscht. Räume, die dir gehören und keine weiteren Mitglieder haben, werden ebenfalls gelöscht; Räume mit weiteren Mitgliedern gehen an ein verbleibendes Mitglied über.",
+          "Das Löschen der App vom Telefon löscht die Daten auf unseren Servern nicht automatisch."
+        ]
+      },
+      {
+        "heading": "7. Deine Rechte",
+        "paragraphs": [
+          "Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner Daten, auf Einschränkung der Verarbeitung, auf Widerspruch und auf Datenübertragbarkeit (DSGVO). Nach Art. 11 KVKK kannst du außerdem erfahren, ob und wozu deine Daten verarbeitet und an wen sie übermittelt werden, die Benachrichtigung der Empfänger über Berichtigungen oder Löschungen verlangen, nachteiligen Ergebnissen automatisierter Auswertung widersprechen und bei rechtswidriger Verarbeitung Schadensersatz verlangen.",
+          "Anfragen sendest du an enesgunel@enesgunel.com; wir antworten innerhalb von 30 Tagen. Da Konten anonym sind, können wir zur Überprüfung den Einladungscode eines Raums und deinen Spitznamen erfragen.",
+          "Du kannst dich außerdem bei der Datenschutzaufsichtsbehörde deines Landes oder bei der türkischen Datenschutzbehörde beschweren."
+        ]
+      },
+      {
+        "heading": "8. Kinder",
+        "paragraphs": [
+          "Timegami richtet sich nicht an Kinder unter 13 Jahren. Wenn dein Land für digitale Dienste ein höheres Mindestalter vorsieht und du jünger bist, solltest du die App nur mit Erlaubnis deiner Eltern nutzen."
+        ]
+      },
+      {
+        "heading": "9. Änderungen",
+        "paragraphs": ["Wir können diese Erklärung von Zeit zu Zeit aktualisieren. Über wichtige Änderungen informieren wir dich in der App."]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "updated": "Zuletzt aktualisiert: 13. Oktober 2026",
+    "intro": "Mit der Nutzung von Timegami stimmst du diesen Bedingungen zu.",
+    "sections": [
+      {
+        "heading": "1. Der Dienst",
+        "paragraphs": [
+          "Timegami wird kostenlos und „wie besehen“ bereitgestellt. Wir können Funktionen ändern, hinzufügen oder entfernen und garantieren keinen unterbrechungs- oder fehlerfreien Betrieb."
+        ]
+      },
+      {
+        "heading": "2. Verhaltensregeln",
+        "paragraphs": [
+          "Raumnamen, Spitznamen und Notizen dürfen keine rechtswidrigen Inhalte, Hassrede, Belästigung, Drohungen, Obszönitäten oder personenbezogene Daten anderer enthalten.",
+          "Inhalte und Konten, die gegen diese Regeln verstoßen, können wir entfernen. Unangemessene Inhalte oder Missbrauch kannst du an enesgunel@enesgunel.com melden."
+        ]
+      },
+      {
+        "heading": "3. Ehrlichkeit",
+        "paragraphs": ["Timegami ist ein Spiel, das auf Vertrauen beruht. Du bist für die Richtigkeit deiner Einträge verantwortlich."]
+      },
+      {
+        "heading": "4. Altersgrenze",
+        "paragraphs": ["Du musst mindestens 13 Jahre alt sein, um Timegami zu nutzen."]
+      },
+      {
+        "heading": "5. Haftung",
+        "paragraphs": [
+          "Soweit gesetzlich zulässig, haften wir nicht für mittelbare Schäden aus der Nutzung der App, einschließlich Datenverlust. Deine zwingenden Verbraucherrechte bleiben unberührt."
+        ]
+      },
+      {
+        "heading": "6. Anwendbares Recht",
+        "paragraphs": [
+          "Es gilt das Recht der Republik Türkei. Wenn du in der Europäischen Union lebst, gelten zusätzlich die zwingenden Verbraucherschutzvorschriften deines Landes."
+        ]
+      },
+      {
+        "heading": "7. Kontakt",
+        "paragraphs": ["Enes Günel · enesgunel@enesgunel.com"]
+      }
+    ]
+  }
+}

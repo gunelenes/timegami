@@ -1,0 +1,115 @@
+{
+  "privacy": {
+    "title": "Gizlilik Politikası ve Aydınlatma Metni",
+    "updated": "Son güncelleme: 13 Ekim 2026",
+    "intro": "Bu metin, Timegami uygulamasını kullanırken kişisel verilerinin nasıl işlendiğini 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında açıklar.",
+    "sections": [
+      {
+        "heading": "1. Veri sorumlusu",
+        "paragraphs": ["Enes Günel", "İletişim: enesgunel@enesgunel.com"]
+      },
+      {
+        "heading": "2. Hangi verileri işliyoruz?",
+        "paragraphs": [
+          "Hesap kimliği: Uygulamayı ilk açtığında senin için rastgele bir anonim kullanıcı kimliği oluşturulur. E-posta adresi, telefon numarası veya gerçek adını istemeyiz.",
+          "Oda bilgileri: Oluşturduğun ya da katıldığın odaların adı, simgesi ve ayarları; o odadaki takma adın ve sana atanan renk.",
+          "Kayıtlar: Her kayıt için ilgili hücre, kaydın zamanı, o andaki saat dilimin, kaydın canlı mı yoksa elle mi eklendiği ve isteğe bağlı notun.",
+          "Cihazındaki veriler: Dil, görünüm ve hatırlatma tercihlerin, gördüğün rozetler ve oturum bilgin yalnızca telefonunda saklanır.",
+          "Toplamadıklarımız: Konum, rehber, fotoğraf, reklam kimliği ya da analitik veya izleme verisi toplamıyoruz. Hatırlatma bildirimleri telefonunda kurulur; bunun için sunucumuza bilgi gönderilmez."
+        ]
+      },
+      {
+        "heading": "3. Amaçlar ve hukuki sebepler",
+        "paragraphs": [
+          "Verilerini yalnızca uygulamanın hizmetini sunmak için işleriz: odaları ve ızgaraları göstermek, kayıtlarını oda arkadaşlarınla paylaşmak, ilerleme, rozet ve sıralamaları hesaplamak ve hizmetin güvenliğini sağlamak.",
+          "Hukuki sebep, uygulamayı kullanmanla kurulan sözleşmenin ifasıdır (KVKK m.5/2-c, GDPR m.6/1-b). Güvenliğin sağlanması ve kötüye kullanımın önlenmesi için meşru menfaatimize de dayanırız (KVKK m.5/2-f, GDPR m.6/1-f).",
+          "Verilerini pazarlama, reklam veya profil oluşturma amacıyla kullanmayız ve satmayız."
+        ]
+      },
+      {
+        "heading": "4. Verilerini kimler görebilir?",
+        "paragraphs": [
+          "Bir odadaki takma adın, rengin, kayıtların ve notların o odanın diğer üyelerine görünür. Odalar herkese açık değildir; yalnızca davet koduyla katılınabilir.",
+          "Notlarına sağlık bilgisi gibi hassas bilgiler yazmamanı öneririz."
+        ]
+      },
+      {
+        "heading": "5. Hizmet sağlayıcılar ve yurt dışına aktarım",
+        "paragraphs": [
+          "Verilerin, veri işleyen sıfatıyla Google'ın Firebase hizmetlerinde (Firebase Authentication ve Cloud Firestore) saklanır. Cloud Firestore verileri Avrupa Birliği'ndeki (Belçika ve Hollanda) sunucularda tutulur; anonim kimlik doğrulama Google'ın küresel altyapısında işlenebilir.",
+          "Bu nedenle verilerin Türkiye dışına aktarılır. Aktarım, KVKK m.9 ve GDPR'ın öngördüğü güvencelere uygun olarak yapılır."
+        ]
+      },
+      {
+        "heading": "6. Saklama süresi ve silme",
+        "paragraphs": [
+          "Verilerin, hesabını silene kadar saklanır.",
+          "Ayarlar'daki \"Hesabımı ve verilerimi sil\" seçeneğiyle tüm kayıtların, oda üyeliklerin ve hesabın kalıcı olarak silinir. Sahibi olduğun ve başka üyesi kalmayan odalar da silinir; başka üyeleri olan odaların sahipliği kalan bir üyeye devredilir.",
+          "Uygulamayı telefonundan silmek, sunucudaki verileri tek başına silmez."
+        ]
+      },
+      {
+        "heading": "7. Hakların",
+        "paragraphs": [
+          "KVKK m.11 uyarınca; kişisel verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini ya da yok edilmesini isteme, bu işlemlerin aktarıldığı kişilere bildirilmesini isteme, otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuca itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğraman hâlinde zararın giderilmesini talep etme haklarına sahipsin. Avrupa Birliği'nde bulunuyorsan GDPR kapsamında erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarına da sahipsin.",
+          "Taleplerini enesgunel@enesgunel.com adresine iletebilirsin; en geç 30 gün içinde yanıtlarız. Hesabın anonim olduğu için talebini doğrulayabilmemiz adına odanın davet kodunu ve takma adını belirtmen gerekebilir.",
+          "Ayrıca Kişisel Verileri Koruma Kurulu'na ya da Avrupa Birliği'nde bulunduğun ülkenin veri koruma otoritesine şikâyette bulunabilirsin."
+        ]
+      },
+      {
+        "heading": "8. Çocuklar",
+        "paragraphs": [
+          "Timegami 13 yaşından küçükler için tasarlanmamıştır. Bulunduğun ülkede dijital hizmetler için daha yüksek bir yaş sınırı varsa ve bu yaşın altındaysan, uygulamayı ebeveyninin izniyle kullanmalısın."
+        ]
+      },
+      {
+        "heading": "9. Değişiklikler",
+        "paragraphs": ["Bu metni zaman zaman güncelleyebiliriz. Önemli değişikliklerde seni uygulama içinde bilgilendiririz."]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "updated": "Son güncelleme: 13 Ekim 2026",
+    "intro": "Timegami'yi kullanarak bu koşulları kabul etmiş olursun.",
+    "sections": [
+      {
+        "heading": "1. Hizmet",
+        "paragraphs": [
+          "Timegami ücretsiz ve \"olduğu gibi\" sunulur. Özellikleri değiştirebilir, ekleyebilir veya kaldırabiliriz; hizmetin kesintisiz veya hatasız olacağını garanti etmeyiz."
+        ]
+      },
+      {
+        "heading": "2. Davranış kuralları",
+        "paragraphs": [
+          "Oda adlarında, takma adlarda ve notlarda yasa dışı içerik, nefret söylemi, taciz, tehdit, müstehcenlik veya başkalarının kişisel bilgilerini paylaşmak yasaktır.",
+          "Bu kurallara uymayan içerikleri ve hesapları kaldırabiliriz. Uygunsuz içerik veya kötüye kullanımı enesgunel@enesgunel.com adresine bildirebilirsin."
+        ]
+      },
+      {
+        "heading": "3. Dürüstlük",
+        "paragraphs": ["Timegami güvene dayalı bir oyundur. Kayıtlarının doğruluğundan sen sorumlusun."]
+      },
+      {
+        "heading": "4. Yaş sınırı",
+        "paragraphs": ["Timegami'yi kullanmak için en az 13 yaşında olmalısın."]
+      },
+      {
+        "heading": "5. Sorumluluk",
+        "paragraphs": [
+          "Yürürlükteki hukukun izin verdiği ölçüde, veri kaybı dahil, uygulamanın kullanımından doğan dolaylı zararlardan sorumlu değiliz. Tüketici olarak kanunlardan doğan zorunlu hakların saklıdır."
+        ]
+      },
+      {
+        "heading": "6. Uygulanacak hukuk",
+        "paragraphs": [
+          "Bu koşullar Türkiye Cumhuriyeti hukukuna tabidir. Avrupa Birliği'nde yaşıyorsan, bulunduğun ülkenin tüketiciyi koruyan zorunlu kuralları da geçerlidir."
+        ]
+      },
+      {
+        "heading": "7. İletişim",
+        "paragraphs": ["Enes Günel · enesgunel@enesgunel.com"]
+      }
+    ]
+  }
+}
