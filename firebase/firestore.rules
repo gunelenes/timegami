@@ -1,0 +1,125 @@
+rules_version = '2';
+
+// Trust-based game: rules protect identity and room membership, not the honesty of marks.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function roomData(roomId) {
+      return get(/databases/$(database)/documents/rooms/$(roomId)).data;
+    }
+
+    function isMember(roomId) {
+      return signedIn() && request.auth.uid in roomData(roomId).memberColors;
+    }
+
+    function isOwner(roomId) {
+      return signedIn() && roomData(roomId).ownerId == request.auth.uid;
+    }
+
+    function validNickname(name) {
+      return name is string && name.size() >= 1 && name.size() <= 20;
+    }
+
+    // Each player's own list of rooms, for the home screen.
+    match /users/{uid}/rooms/{roomId} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+
+    match /inviteCodes/{code} {
+      // Lookup by exact code only; codes cannot be listed.
+      allow get: if signedIn();
+      allow create: if signedIn()
+        && getAfter(/databases/$(database)/documents/rooms/$(request.resource.data.roomId)).data.ownerId == request.auth.uid
+        && getAfter(/databases/$(database)/documents/rooms/$(request.resource.data.roomId)).data.inviteCode == code;
+      allow delete: if signedIn() && roomData(resource.data.roomId).ownerId == request.auth.uid;
+    }
+
+    match /rooms/{roomId} {
+      // Room ids are unguessable and only reachable through an invite code.
+      allow get: if signedIn();
+
+      allow create: if signedIn()
+        && request.resource.data.ownerId == request.auth.uid
+        && request.resource.data.memberColors.keys().hasOnly([request.auth.uid])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 1 && request.resource.data.name.size() <= 60;
+
+      allow update: if isOwnerUpdate() || isJoin() || isLeave() || isOwnerHandOver();
+
+      // The owner may delete the room for everyone (after clearing its marks and members).
+      allow delete: if signedIn() && resource.data.ownerId == request.auth.uid;
+
+      function isOwnerUpdate() {
+        return signedIn()
+          && resource.data.ownerId == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'emoji', 'inviteCode']);
+      }
+
+      // A joiner may only add their own colour, must present the current invite code, and the room must have space.
+      function isJoin() {
+        let colors = request.resource.data.memberColors.diff(resource.data.memberColors);
+        return signedIn()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberColors'])
+          && colors.addedKeys().hasOnly([request.auth.uid])
+          && colors.changedKeys().size() == 0
+          && colors.removedKeys().size() == 0
+          && request.resource.data.memberColors.size() <= 12
+          && getAfter(/databases/$(database)/documents/rooms/$(roomId)/members/$(request.auth.uid)).data.inviteCode == resource.data.inviteCode;
+      }
+
+      // A member who is not the owner leaves: only their own colour disappears.
+      function isLeave() {
+        let colors = request.resource.data.memberColors.diff(resource.data.memberColors);
+        return signedIn()
+          && resource.data.ownerId != request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberColors'])
+          && colors.removedKeys().hasOnly([request.auth.uid])
+          && colors.removedKeys().size() == 1
+          && colors.addedKeys().size() == 0
+          && colors.changedKeys().size() == 0;
+      }
+
+      // The owner leaves and hands the room to a member who stays.
+      function isOwnerHandOver() {
+        let colors = request.resource.data.memberColors.diff(resource.data.memberColors);
+        return signedIn()
+          && resource.data.ownerId == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['ownerId', 'memberColors'])
+          && colors.removedKeys().hasOnly([request.auth.uid])
+          && colors.removedKeys().size() == 1
+          && colors.addedKeys().size() == 0
+          && colors.changedKeys().size() == 0
+          && request.resource.data.ownerId in request.resource.data.memberColors;
+      }
+
+      match /members/{uid} {
+        allow read: if isMember(roomId);
+        allow create: if signedIn()
+          && uid == request.auth.uid
+          && validNickname(request.resource.data.nickname)
+          && getAfter(/databases/$(database)/documents/rooms/$(roomId)).data.memberColors[uid] == request.resource.data.color;
+        allow update: if signedIn()
+          && uid == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['nickname'])
+          && validNickname(request.resource.data.nickname);
+        // Leaving, or the owner clearing the room before deleting it.
+        allow delete: if signedIn() && (uid == request.auth.uid || isOwner(roomId));
+      }
+
+      match /marks/{markId} {
+        allow read: if isMember(roomId);
+        allow create: if isMember(roomId)
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.cellIndex is int
+          && request.resource.data.cellIndex >= 0
+          && request.resource.data.cellIndex < roomData(roomId).config.cellCount
+          && request.resource.data.source in ['live', 'manual']
+          && (!('note' in request.resource.data) || (request.resource.data.note is string && request.resource.data.note.size() <= 280));
+        allow delete: if signedIn() && (resource.data.uid == request.auth.uid || isOwner(roomId));
+      }
+    }
+  }
+}
