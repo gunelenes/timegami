@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Timegami",
+    "slug": "timegami",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/icon.png",
+    "scheme": "timegami",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.timegami.app",
+      "supportsTablet": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.timegami.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFC93C",
+        "foregroundImage": "./assets/brand/android-icon-foreground.png",
+        "backgroundImage": "./assets/brand/android-icon-background.png",
+        "monochromeImage": "./assets/brand/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/brand/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFC93C",
+          "image": "./assets/brand/splash-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      "expo-localization",
+      "expo-sharing"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
