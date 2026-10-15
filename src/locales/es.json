@@ -1,0 +1,234 @@
+{
+  "common": {
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "loading": "Cargando…",
+    "nickname": "Tu apodo en esta sala",
+    "nicknamePlaceholder": "p. ej. Lucía"
+  },
+  "home": {
+    "title": "Timegami",
+    "tagline": "Llena cada celda del tiempo.",
+    "newChallenge": "Nuevo reto",
+    "join": "Unirse con código",
+    "myRooms": "Mis retos",
+    "emptyTitle": "Empieza tu primer reto",
+    "empty": "Crea uno o únete a tus amigos con su código de invitación.",
+    "members_one": "{{count}} jugador",
+    "members_other": "{{count}} jugadores"
+  },
+  "templates": {
+    "everyMinuteOfDay": "Cada minuto del día",
+    "every10MinutesOfDay": "Cada 10 minutos del día",
+    "everyHourOfWeek": "Cada hora de la semana",
+    "everyDayOfYear": "Cada día del año",
+    "matchMinutes": "Cada minuto de un partido de 90'",
+    "dailyStreak365": "Racha de 365 días",
+    "custom": "Personalizado"
+  },
+  "create": {
+    "title": "Nuevo reto",
+    "name": "Nombre del reto",
+    "namePlaceholder": "p. ej. Hacer pis cada minuto",
+    "emoji": "Icono",
+    "template": "Cuadrícula",
+    "kind": "Tipo",
+    "kindCollection": "Colección",
+    "kindCollectionHint": "Llena cada celda al menos una vez, a tu ritmo. Tarda lo que tenga que tardar.",
+    "kindStreak": "Racha",
+    "kindStreakHint": "Una celda por día del calendario. Si fallas un día se rompe la racha, pero puedes seguir.",
+    "cycle": "Ciclo",
+    "cycleDay": "Día",
+    "cycleWeek": "Semana",
+    "cycleYear": "Año",
+    "cycleFree": "Sin reloj",
+    "cycleFreeHint": "Tú eliges la celda, p. ej. el minuto de un gol.",
+    "unit": "Unidad de celda",
+    "unitMinute": "Minuto",
+    "unitHour": "Hora",
+    "unitDay": "Día",
+    "step": "Unidades por celda",
+    "cellCount": "Número de celdas",
+    "days": "Número de días",
+    "startsToday": "Empieza hoy ({{date}}).",
+    "summary_one": "{{count}} celda",
+    "summary_other": "{{count}} celdas",
+    "invalid": "Esta combinación no divide el ciclo en partes iguales. Prueba otro paso.",
+    "submit": "Crear sala"
+  },
+  "join": {
+    "title": "Unirse a un reto",
+    "code": "Código de invitación",
+    "submit": "Unirse"
+  },
+  "room": {
+    "myBoard": "Mi tablero",
+    "sharedBoard": "Tablero común",
+    "now": "¡Acaba de pasar!",
+    "nowUnavailable": "La racha no está activa hoy.",
+    "nowEmpty": "¡Celda libre!",
+    "nowMine_one": "Ya está llena",
+    "nowMine_other": "Ya está llena ×{{count}}",
+    "current": "Ahora",
+    "newCell": "¡Nueva celda! {{cell}} 🎉",
+    "repeatCell": "{{cell}} otra vez (×{{count}})",
+    "missing": "faltan",
+    "rank": "puesto",
+    "currentStreak_one": "día de racha",
+    "currentStreak_other": "días de racha",
+    "longestStreak": "mejor racha",
+    "daysFilled": "días llenos",
+    "tapCell": "Toca una celda para marcarla.",
+    "invite": "Código de invitación",
+    "share": "Invitar",
+    "regenerate": "Nuevo código",
+    "regenerateConfirm": "El código anterior dejará de funcionar. ¿Continuar?",
+    "shareMessage": "¡Únete a mi reto de Timegami \"{{name}}\" {{emoji}} con el código {{code}}!\n{{link}}",
+    "tapRow": "Toca una fila para ampliarla.",
+    "players": "Jugadores",
+    "you": "tú",
+    "notFound": "Este reto ya no existe o no formas parte de él.",
+    "heatBoard": "Mapa de calor",
+    "heatLegend": "Más oscuro = más jugadores (hasta {{count}})",
+    "nextEmpty": "Siguiente libre: {{cell}} · {{when}}",
+    "missingTitle": "Celdas que faltan",
+    "missingMore": "+{{count}} rangos más",
+    "missingNone": "¡No falta nada: cuadrícula completa! 🎉",
+    "activityTitle": "Actividad reciente",
+    "activityEmpty": "Aún no hay marcas. ¡Empieza tú!",
+    "activityNew": "atrapó {{cell}}",
+    "activityRepeat": "marcó {{cell}} otra vez",
+    "hourComplete": "¡Hora {{hour}} completa! ⏰",
+    "rename": "Cambiar apodo",
+    "renameSave": "Guardar",
+    "shareImage": "Compartir imagen",
+    "reminderTitle": "Mantén tu racha",
+    "reminderBody": "Te avisamos a las 20:00 los días que aún no hayas marcado.",
+    "reminderEnable": "Activar recordatorios",
+    "reminderOn": "Recordatorio a las 20:00 los días sin marcar",
+    "leave": "Salir del reto",
+    "leaveConfirmTitle": "¿Salir de este reto?",
+    "leaveConfirmBody": "Se eliminarán todas tus marcas en este reto. Puedes volver a unirte con el código de invitación, pero tus marcas no volverán.",
+    "leaveOwnerBody": "Se eliminarán todas tus marcas en este reto y el jugador más antiguo pasará a ser el propietario.",
+    "leaveButton": "Salir",
+    "deleteRoom": "Eliminar reto",
+    "deleteConfirmTitle": "¿Eliminar este reto para todos?",
+    "deleteConfirmBody": "No se puede deshacer. Se eliminan las marcas de todos los jugadores y el reto desaparece para todos.",
+    "deleteSoloBody": "No se puede deshacer. Se eliminarán todas tus marcas en este reto."
+  },
+  "cell": {
+    "empty": "Nadie ha llenado esta celda todavía.",
+    "add": "Añadir una marca aquí",
+    "notePlaceholder": "Nota (opcional)",
+    "live": "en vivo",
+    "manual": "añadida a mano",
+    "deleteConfirm": "¿Eliminar esta marca?"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "systemLanguage": "Idioma del dispositivo",
+    "appearance": "Apariencia",
+    "appearanceSystem": "Auto",
+    "appearanceLight": "Claro",
+    "appearanceDark": "Oscuro",
+    "theme": "Tema",
+    "notifications": "Notificaciones",
+    "streakReminders": "Recordatorios de racha",
+    "streakRemindersHint": "A las 20:00 los días que aún no hayas marcado una racha.",
+    "permissionDenied": "Las notificaciones de Timegami están desactivadas. Actívalas en los ajustes del teléfono.",
+    "privacySection": "Privacidad y cuenta",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "contact": "Contacto y solicitudes de datos",
+    "deleteAccount": "Eliminar mi cuenta y mis datos",
+    "deleteAccountHint": "Borra para siempre todas tus marcas, membresías y tu cuenta. Las salas de las que eres propietario pasan a otro miembro o se eliminan si no queda nadie.",
+    "deleteConfirmTitle": "¿Eliminarlo todo?",
+    "deleteConfirmBody": "No se puede deshacer. Se eliminarán todas tus marcas y membresías de salas.",
+    "deleteConfirmButton": "Eliminar",
+    "deleted": "Tu cuenta y tus datos se han eliminado.",
+    "deleteFailed": "No se pudo eliminar. Revisa tu conexión e inténtalo de nuevo."
+  },
+  "themes": {
+    "playful": "Divertido"
+  },
+  "errors": {
+    "invalid_nickname": "El apodo debe tener entre 1 y 20 caracteres.",
+    "invalid_code": "No se encontró ninguna sala con este código.",
+    "room_full": "Esta sala está llena.",
+    "invalid_cell": "Esta celda está fuera de la cuadrícula.",
+    "no_clock": "Esta cuadrícula no tiene reloj; toca una celda.",
+    "name_required": "Ponle un nombre al reto.",
+    "generic": "Algo salió mal. Revisa tu conexión e inténtalo de nuevo.",
+    "not_owner": "Solo el propietario puede hacer esto."
+  },
+  "time": {
+    "inMinutes_one": "en {{count}} min",
+    "inMinutes_other": "en {{count}} min",
+    "inHours_one": "en {{count}} h",
+    "inHours_other": "en {{count}} h",
+    "inHoursMinutes": "en {{hours}} h {{minutes}} min",
+    "inDays_one": "en {{count}} día",
+    "inDays_other": "en {{count}} días",
+    "justNow": "ahora mismo",
+    "minutesAgo_one": "hace {{count}} min",
+    "minutesAgo_other": "hace {{count}} min",
+    "hoursAgo_one": "hace {{count}} h",
+    "hoursAgo_other": "hace {{count}} h",
+    "daysAgo_one": "hace {{count}} día",
+    "daysAgo_other": "hace {{count}} días"
+  },
+  "badges": {
+    "title": "Insignias",
+    "locked": "bloqueada",
+    "newBadge": "¡NUEVA INSIGNIA!",
+    "great": "¡Genial!",
+    "firstCell": {
+      "name": "Primera celda",
+      "description": "Llena tu primera celda."
+    },
+    "quarter": {
+      "name": "Un cuarto",
+      "description": "Llena el 25 % de la cuadrícula."
+    },
+    "half": {
+      "name": "A mitad de camino",
+      "description": "Llena el 50 % de la cuadrícula."
+    },
+    "complete": {
+      "name": "Maestro del origami",
+      "description": "Llena toda la cuadrícula."
+    },
+    "nightOwl": {
+      "name": "Búho nocturno",
+      "description": "Llena una celda entre las 00:00 y las 04:59."
+    },
+    "fullHour": {
+      "name": "Hora completa",
+      "description": "Llena todas las celdas de una hora."
+    },
+    "streak7": {
+      "name": "Racha semanal",
+      "description": "7 días seguidos."
+    },
+    "streak30": {
+      "name": "Racha mensual",
+      "description": "30 días seguidos."
+    }
+  },
+  "notifications": {
+    "streakBody": "Aún no has marcado hoy: ¡no rompas tu racha! 🔥"
+  },
+  "welcome": {
+    "title": "Antes de empezar",
+    "pointAnonymous": "Sin registro: recibes un identificador anónimo. Nunca te pedimos tu correo ni tu nombre real.",
+    "pointShared": "Tu apodo y tus marcas solo los ven las personas de tus salas, y se guardan en servidores de Google Firebase en la UE.",
+    "pointDelete": "Puedes eliminar tu cuenta y todos tus datos cuando quieras desde Ajustes.",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "termsNote": "Al continuar aceptas las Condiciones de uso. La Política de privacidad explica cómo se tratan tus datos.",
+    "continue": "Continuar",
+    "back": "Atrás"
+  }
+}

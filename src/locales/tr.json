@@ -1,0 +1,234 @@
+{
+  "common": {
+    "cancel": "Vazgeç",
+    "delete": "Sil",
+    "close": "Kapat",
+    "loading": "Yükleniyor…",
+    "nickname": "Bu odadaki takma adın",
+    "nicknamePlaceholder": "ör. Enes"
+  },
+  "home": {
+    "title": "Timegami",
+    "tagline": "Zamanın her hücresini doldur.",
+    "newChallenge": "Yeni challenge",
+    "join": "Kodla katıl",
+    "myRooms": "Challenge'larım",
+    "emptyTitle": "İlk challenge'ını başlat",
+    "empty": "Bir tane oluştur ya da arkadaşlarının davet koduyla katıl.",
+    "members_one": "{{count}} oyuncu",
+    "members_other": "{{count}} oyuncu"
+  },
+  "templates": {
+    "everyMinuteOfDay": "Günün her dakikası",
+    "every10MinutesOfDay": "Günün her 10 dakikası",
+    "everyHourOfWeek": "Haftanın her saati",
+    "everyDayOfYear": "Yılın her günü",
+    "matchMinutes": "90 dakikalık maçın her dakikası",
+    "dailyStreak365": "365 günlük seri",
+    "custom": "Özel"
+  },
+  "create": {
+    "title": "Yeni challenge",
+    "name": "Challenge adı",
+    "namePlaceholder": "ör. Her dakika işemek",
+    "emoji": "İkon",
+    "template": "Izgara",
+    "kind": "Tür",
+    "kindCollection": "Koleksiyon",
+    "kindCollectionHint": "Her hücreyi en az bir kez doldur, kendi hızında. Ne kadar sürerse sürsün.",
+    "kindStreak": "Seri",
+    "kindStreakHint": "Takvimde her gün bir hücre. Bir gün kaçarsa seri bozulur ama devam edebilirsin.",
+    "cycle": "Döngü",
+    "cycleDay": "Gün",
+    "cycleWeek": "Hafta",
+    "cycleYear": "Yıl",
+    "cycleFree": "Saatsiz",
+    "cycleFreeHint": "Hücreyi kendin seçersin, ör. golün dakikası.",
+    "unit": "Hücre birimi",
+    "unitMinute": "Dakika",
+    "unitHour": "Saat",
+    "unitDay": "Gün",
+    "step": "Hücre başına birim",
+    "cellCount": "Hücre sayısı",
+    "days": "Gün sayısı",
+    "startsToday": "Bugün başlar ({{date}}).",
+    "summary_one": "{{count}} hücre",
+    "summary_other": "{{count}} hücre",
+    "invalid": "Bu kombinasyon döngüyü eşit bölmüyor. Başka bir adım dene.",
+    "submit": "Odayı oluştur"
+  },
+  "join": {
+    "title": "Challenge'a katıl",
+    "code": "Davet kodu",
+    "submit": "Katıl"
+  },
+  "room": {
+    "myBoard": "Benim tahtam",
+    "sharedBoard": "Ortak tahta",
+    "now": "Şimdi oldu!",
+    "nowUnavailable": "Seri bugün aktif değil.",
+    "nowEmpty": "Boş hücre!",
+    "nowMine_one": "Burası dolu",
+    "nowMine_other": "Burası dolu ×{{count}}",
+    "current": "Şu an",
+    "newCell": "Yeni hücre! {{cell}} 🎉",
+    "repeatCell": "{{cell}} yine (×{{count}})",
+    "missing": "eksik",
+    "rank": "sıralama",
+    "currentStreak_one": "günlük seri",
+    "currentStreak_other": "günlük seri",
+    "longestStreak": "en iyi seri",
+    "daysFilled": "dolu gün",
+    "tapCell": "Kaydetmek için bir hücreye dokun.",
+    "invite": "Davet kodu",
+    "share": "Davet et",
+    "regenerate": "Yeni kod",
+    "regenerateConfirm": "Eski kod çalışmayı bırakacak. Devam edilsin mi?",
+    "shareMessage": "Timegami'deki \"{{name}}\" {{emoji}} challenge'ıma katıl! Kod: {{code}}\n{{link}}",
+    "tapRow": "Yakınlaştırmak için bir satıra dokun.",
+    "players": "Oyuncular",
+    "you": "sen",
+    "notFound": "Bu challenge artık yok ya da üyesi değilsin.",
+    "heatBoard": "Isı haritası",
+    "heatLegend": "Koyu = daha çok oyuncu (en fazla {{count}})",
+    "nextEmpty": "Sıradaki boş: {{cell}} · {{when}}",
+    "missingTitle": "Eksik hücreler",
+    "missingMore": "+{{count}} aralık daha",
+    "missingNone": "Eksik yok — ızgara tamamlandı! 🎉",
+    "activityTitle": "Son hareketler",
+    "activityEmpty": "Henüz kayıt yok. İlk sen ol!",
+    "activityNew": "{{cell}} hücresini kaptı",
+    "activityRepeat": "{{cell}} hücresini yine işaretledi",
+    "hourComplete": "{{hour}} saati tamamlandı! ⏰",
+    "rename": "Takma adı değiştir",
+    "renameSave": "Kaydet",
+    "shareImage": "Görsel olarak paylaş",
+    "reminderTitle": "Serini koru",
+    "reminderBody": "Kayıt atmadığın günlerde saat 20:00'de hatırlatalım.",
+    "reminderEnable": "Hatırlatmayı aç",
+    "reminderOn": "Kayıtsız günlerde 20:00'de hatırlatma açık",
+    "leave": "Challenge'dan ayrıl",
+    "leaveConfirmTitle": "Bu challenge'dan ayrılmak istiyor musun?",
+    "leaveConfirmBody": "Bu challenge'daki tüm kayıtların silinir. Davet koduyla yeniden katılabilirsin ama kayıtların geri gelmez.",
+    "leaveOwnerBody": "Bu challenge'daki tüm kayıtların silinir ve sahiplik en eski oyuncuya geçer.",
+    "leaveButton": "Ayrıl",
+    "deleteRoom": "Challenge'ı sil",
+    "deleteConfirmTitle": "Challenge herkes için silinsin mi?",
+    "deleteConfirmBody": "Bu işlem geri alınamaz. Tüm oyuncuların kayıtları silinir ve challenge herkesin listesinden kalkar.",
+    "deleteSoloBody": "Bu işlem geri alınamaz. Bu challenge'daki tüm kayıtların silinir."
+  },
+  "cell": {
+    "empty": "Bu hücreyi henüz kimse doldurmadı.",
+    "add": "Buraya kayıt ekle",
+    "notePlaceholder": "Not (isteğe bağlı)",
+    "live": "canlı",
+    "manual": "elle eklendi",
+    "deleteConfirm": "Bu kayıt silinsin mi?"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "systemLanguage": "Cihaz dili",
+    "appearance": "Görünüm",
+    "appearanceSystem": "Otomatik",
+    "appearanceLight": "Açık",
+    "appearanceDark": "Koyu",
+    "theme": "Tema",
+    "notifications": "Bildirimler",
+    "streakReminders": "Seri hatırlatmaları",
+    "streakRemindersHint": "Seride kayıt atmadığın günlerde saat 20:00'de.",
+    "permissionDenied": "Timegami için bildirimler kapalı. Telefonunun ayarlarından açabilirsin.",
+    "privacySection": "Gizlilik ve hesap",
+    "privacy": "Gizlilik ve aydınlatma metni",
+    "terms": "Kullanım koşulları",
+    "contact": "İletişim ve veri talepleri",
+    "deleteAccount": "Hesabımı ve verilerimi sil",
+    "deleteAccountHint": "Tüm kayıtların, oda üyeliklerin ve hesabın kalıcı olarak silinir. Sahibi olduğun odalar başka bir üyeye devredilir; başka üye yoksa silinir.",
+    "deleteConfirmTitle": "Her şey silinsin mi?",
+    "deleteConfirmBody": "Bu işlem geri alınamaz. Tüm kayıtların ve oda üyeliklerin silinecek.",
+    "deleteConfirmButton": "Sil",
+    "deleted": "Hesabın ve verilerin silindi.",
+    "deleteFailed": "Silme başarısız oldu. Bağlantını kontrol edip tekrar dene."
+  },
+  "themes": {
+    "playful": "Eğlenceli"
+  },
+  "errors": {
+    "invalid_nickname": "Takma ad 1–20 karakter olmalı.",
+    "invalid_code": "Bu koda ait oda bulunamadı.",
+    "room_full": "Bu oda dolu.",
+    "invalid_cell": "Bu hücre ızgaranın dışında.",
+    "no_clock": "Bu ızgarada saat yok; bunun yerine bir hücreye dokun.",
+    "name_required": "Challenge'a bir isim ver.",
+    "generic": "Bir şeyler ters gitti. Bağlantını kontrol edip tekrar dene.",
+    "not_owner": "Bunu yalnızca challenge sahibi yapabilir."
+  },
+  "time": {
+    "inMinutes_one": "{{count}} dk sonra",
+    "inMinutes_other": "{{count}} dk sonra",
+    "inHours_one": "{{count}} sa sonra",
+    "inHours_other": "{{count}} sa sonra",
+    "inHoursMinutes": "{{hours}} sa {{minutes}} dk sonra",
+    "inDays_one": "{{count}} gün sonra",
+    "inDays_other": "{{count}} gün sonra",
+    "justNow": "az önce",
+    "minutesAgo_one": "{{count}} dk önce",
+    "minutesAgo_other": "{{count}} dk önce",
+    "hoursAgo_one": "{{count}} sa önce",
+    "hoursAgo_other": "{{count}} sa önce",
+    "daysAgo_one": "{{count}} gün önce",
+    "daysAgo_other": "{{count}} gün önce"
+  },
+  "badges": {
+    "title": "Rozetler",
+    "locked": "kilitli",
+    "newBadge": "YENİ ROZET",
+    "great": "Harika!",
+    "firstCell": {
+      "name": "İlk hücre",
+      "description": "İlk hücreni doldur."
+    },
+    "quarter": {
+      "name": "Çeyrek",
+      "description": "Izgaranın %25'ini doldur."
+    },
+    "half": {
+      "name": "Yarı yol",
+      "description": "Izgaranın %50'sini doldur."
+    },
+    "complete": {
+      "name": "Origami ustası",
+      "description": "Izgaranın tamamını doldur."
+    },
+    "nightOwl": {
+      "name": "Gece kuşu",
+      "description": "00:00–04:59 arasında bir hücre doldur."
+    },
+    "fullHour": {
+      "name": "Tam saat",
+      "description": "Bir saatin tüm hücrelerini doldur."
+    },
+    "streak7": {
+      "name": "Haftalık seri",
+      "description": "7 gün üst üste."
+    },
+    "streak30": {
+      "name": "Aylık seri",
+      "description": "30 gün üst üste."
+    }
+  },
+  "notifications": {
+    "streakBody": "Bugün henüz kayıt atmadın, serin bozulmak üzere! 🔥"
+  },
+  "welcome": {
+    "title": "Başlamadan önce",
+    "pointAnonymous": "Üyelik yok: sana anonim bir kimlik verilir. E-posta adresini veya gerçek adını asla istemeyiz.",
+    "pointShared": "Takma adın ve kayıtların yalnızca odalarındaki kişilere görünür; Google Firebase'in AB'deki sunucularında saklanır.",
+    "pointDelete": "Hesabını ve tüm verilerini istediğin zaman Ayarlar'dan silebilirsin.",
+    "privacy": "Gizlilik ve aydınlatma metni",
+    "terms": "Kullanım koşulları",
+    "termsNote": "Devam ederek Kullanım Koşulları'nı kabul etmiş olursun. Verilerinin nasıl işlendiği Aydınlatma Metni'nde açıklanmıştır.",
+    "continue": "Devam et",
+    "back": "Geri"
+  }
+}

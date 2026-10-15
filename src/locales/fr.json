@@ -1,0 +1,234 @@
+{
+  "common": {
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "close": "Fermer",
+    "loading": "Chargement…",
+    "nickname": "Ton pseudo dans ce salon",
+    "nicknamePlaceholder": "ex. Camille"
+  },
+  "home": {
+    "title": "Timegami",
+    "tagline": "Remplis chaque case du temps.",
+    "newChallenge": "Nouveau défi",
+    "join": "Rejoindre avec un code",
+    "myRooms": "Mes défis",
+    "emptyTitle": "Lance ton premier défi",
+    "empty": "Crées-en un, ou rejoins tes amis avec leur code d'invitation.",
+    "members_one": "{{count}} joueur",
+    "members_other": "{{count}} joueurs"
+  },
+  "templates": {
+    "everyMinuteOfDay": "Chaque minute de la journée",
+    "every10MinutesOfDay": "Toutes les 10 minutes de la journée",
+    "everyHourOfWeek": "Chaque heure de la semaine",
+    "everyDayOfYear": "Chaque jour de l'année",
+    "matchMinutes": "Chaque minute d'un match de 90'",
+    "dailyStreak365": "Série de 365 jours",
+    "custom": "Personnalisé"
+  },
+  "create": {
+    "title": "Nouveau défi",
+    "name": "Nom du défi",
+    "namePlaceholder": "ex. Faire pipi à chaque minute",
+    "emoji": "Icône",
+    "template": "Grille",
+    "kind": "Type",
+    "kindCollection": "Collection",
+    "kindCollectionHint": "Remplis chaque case au moins une fois, à ton rythme. Ça prendra le temps qu'il faut.",
+    "kindStreak": "Série",
+    "kindStreakHint": "Une case par jour du calendrier. Un jour manqué casse la série, mais tu peux continuer.",
+    "cycle": "Cycle",
+    "cycleDay": "Jour",
+    "cycleWeek": "Semaine",
+    "cycleYear": "Année",
+    "cycleFree": "Sans horloge",
+    "cycleFreeHint": "Tu choisis la case toi-même, ex. la minute d'un but.",
+    "unit": "Unité de case",
+    "unitMinute": "Minute",
+    "unitHour": "Heure",
+    "unitDay": "Jour",
+    "step": "Unités par case",
+    "cellCount": "Nombre de cases",
+    "days": "Nombre de jours",
+    "startsToday": "Commence aujourd'hui ({{date}}).",
+    "summary_one": "{{count}} case",
+    "summary_other": "{{count}} cases",
+    "invalid": "Cette combinaison ne divise pas le cycle de façon égale. Essaie un autre pas.",
+    "submit": "Créer le salon"
+  },
+  "join": {
+    "title": "Rejoindre un défi",
+    "code": "Code d'invitation",
+    "submit": "Rejoindre"
+  },
+  "room": {
+    "myBoard": "Ma grille",
+    "sharedBoard": "Grille commune",
+    "now": "C'est arrivé !",
+    "nowUnavailable": "La série n'est pas active aujourd'hui.",
+    "nowEmpty": "Case libre !",
+    "nowMine_one": "Déjà remplie",
+    "nowMine_other": "Déjà remplie ×{{count}}",
+    "current": "Maintenant",
+    "newCell": "Nouvelle case ! {{cell}} 🎉",
+    "repeatCell": "{{cell}} encore (×{{count}})",
+    "missing": "manquantes",
+    "rank": "rang",
+    "currentStreak_one": "jour de série",
+    "currentStreak_other": "jours de série",
+    "longestStreak": "meilleure série",
+    "daysFilled": "jours remplis",
+    "tapCell": "Touche une case pour la marquer.",
+    "invite": "Code d'invitation",
+    "share": "Inviter",
+    "regenerate": "Nouveau code",
+    "regenerateConfirm": "L'ancien code ne fonctionnera plus. Continuer ?",
+    "shareMessage": "Rejoins mon défi Timegami « {{name}} » {{emoji}} avec le code {{code}}\n{{link}}",
+    "tapRow": "Touche une ligne pour zoomer.",
+    "players": "Joueurs",
+    "you": "toi",
+    "notFound": "Ce défi n'existe plus, ou tu n'en fais pas partie.",
+    "heatBoard": "Carte de chaleur",
+    "heatLegend": "Plus foncé = plus de joueurs (jusqu'à {{count}})",
+    "nextEmpty": "Prochaine case libre : {{cell}} · {{when}}",
+    "missingTitle": "Cases manquantes",
+    "missingMore": "+{{count}} autres plages",
+    "missingNone": "Rien ne manque : grille complète ! 🎉",
+    "activityTitle": "Activité récente",
+    "activityEmpty": "Aucune marque pour l'instant. Lance-toi !",
+    "activityNew": "a pris {{cell}}",
+    "activityRepeat": "a de nouveau marqué {{cell}}",
+    "hourComplete": "Heure {{hour}} complète ! ⏰",
+    "rename": "Changer de pseudo",
+    "renameSave": "Enregistrer",
+    "shareImage": "Partager en image",
+    "reminderTitle": "Garde ta série",
+    "reminderBody": "On te le rappelle à 20:00 les jours où tu n'as rien marqué.",
+    "reminderEnable": "Activer les rappels",
+    "reminderOn": "Rappel à 20:00 les jours sans marque",
+    "leave": "Quitter le défi",
+    "leaveConfirmTitle": "Quitter ce défi ?",
+    "leaveConfirmBody": "Toutes tes marques dans ce défi seront supprimées. Tu peux revenir avec le code d'invitation, mais tes marques ne reviendront pas.",
+    "leaveOwnerBody": "Toutes tes marques dans ce défi seront supprimées et le joueur le plus ancien en devient propriétaire.",
+    "leaveButton": "Quitter",
+    "deleteRoom": "Supprimer le défi",
+    "deleteConfirmTitle": "Supprimer ce défi pour tout le monde ?",
+    "deleteConfirmBody": "Cette action est irréversible. Les marques de tous les joueurs sont supprimées et le défi disparaît pour tous.",
+    "deleteSoloBody": "Cette action est irréversible. Toutes tes marques dans ce défi seront supprimées."
+  },
+  "cell": {
+    "empty": "Personne n'a encore rempli cette case.",
+    "add": "Ajouter une marque ici",
+    "notePlaceholder": "Note (facultatif)",
+    "live": "en direct",
+    "manual": "ajoutée à la main",
+    "deleteConfirm": "Supprimer cette marque ?"
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "systemLanguage": "Langue de l'appareil",
+    "appearance": "Apparence",
+    "appearanceSystem": "Auto",
+    "appearanceLight": "Clair",
+    "appearanceDark": "Sombre",
+    "theme": "Thème",
+    "notifications": "Notifications",
+    "streakReminders": "Rappels de série",
+    "streakRemindersHint": "À 20:00 les jours où tu n'as pas encore marqué une série.",
+    "permissionDenied": "Les notifications de Timegami sont désactivées. Active-les dans les réglages du téléphone.",
+    "privacySection": "Confidentialité et compte",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "contact": "Contact et demandes de données",
+    "deleteAccount": "Supprimer mon compte et mes données",
+    "deleteAccountHint": "Supprime définitivement toutes tes marques, adhésions et ton compte. Les salons dont tu es propriétaire passent à un autre membre, ou sont supprimés s'il n'y a plus personne.",
+    "deleteConfirmTitle": "Tout supprimer ?",
+    "deleteConfirmBody": "Cette action est irréversible. Toutes tes marques et adhésions aux salons seront supprimées.",
+    "deleteConfirmButton": "Supprimer",
+    "deleted": "Ton compte et tes données ont été supprimés.",
+    "deleteFailed": "La suppression a échoué. Vérifie ta connexion et réessaie."
+  },
+  "themes": {
+    "playful": "Ludique"
+  },
+  "errors": {
+    "invalid_nickname": "Le pseudo doit faire entre 1 et 20 caractères.",
+    "invalid_code": "Aucun salon trouvé avec ce code.",
+    "room_full": "Ce salon est complet.",
+    "invalid_cell": "Cette case est hors de la grille.",
+    "no_clock": "Cette grille n'a pas d'horloge ; touche plutôt une case.",
+    "name_required": "Donne un nom au défi.",
+    "generic": "Une erreur s'est produite. Vérifie ta connexion et réessaie.",
+    "not_owner": "Seul le propriétaire peut faire cela."
+  },
+  "time": {
+    "inMinutes_one": "dans {{count}} min",
+    "inMinutes_other": "dans {{count}} min",
+    "inHours_one": "dans {{count}} h",
+    "inHours_other": "dans {{count}} h",
+    "inHoursMinutes": "dans {{hours}} h {{minutes}} min",
+    "inDays_one": "dans {{count}} jour",
+    "inDays_other": "dans {{count}} jours",
+    "justNow": "à l'instant",
+    "minutesAgo_one": "il y a {{count}} min",
+    "minutesAgo_other": "il y a {{count}} min",
+    "hoursAgo_one": "il y a {{count}} h",
+    "hoursAgo_other": "il y a {{count}} h",
+    "daysAgo_one": "il y a {{count}} jour",
+    "daysAgo_other": "il y a {{count}} jours"
+  },
+  "badges": {
+    "title": "Badges",
+    "locked": "verrouillé",
+    "newBadge": "NOUVEAU BADGE",
+    "great": "Génial !",
+    "firstCell": {
+      "name": "Première case",
+      "description": "Remplis ta première case."
+    },
+    "quarter": {
+      "name": "Un quart",
+      "description": "Remplis 25 % de la grille."
+    },
+    "half": {
+      "name": "À mi-chemin",
+      "description": "Remplis 50 % de la grille."
+    },
+    "complete": {
+      "name": "Maître de l'origami",
+      "description": "Remplis toute la grille."
+    },
+    "nightOwl": {
+      "name": "Oiseau de nuit",
+      "description": "Remplis une case entre 00:00 et 04:59."
+    },
+    "fullHour": {
+      "name": "Heure complète",
+      "description": "Remplis toutes les cases d'une heure."
+    },
+    "streak7": {
+      "name": "Série d'une semaine",
+      "description": "7 jours d'affilée."
+    },
+    "streak30": {
+      "name": "Série d'un mois",
+      "description": "30 jours d'affilée."
+    }
+  },
+  "notifications": {
+    "streakBody": "Tu n'as encore rien marqué aujourd'hui : ne casse pas ta série ! 🔥"
+  },
+  "welcome": {
+    "title": "Avant de commencer",
+    "pointAnonymous": "Pas d'inscription : tu reçois un identifiant anonyme. Nous ne demandons jamais ton e-mail ni ton vrai nom.",
+    "pointShared": "Ton pseudo et tes marques ne sont visibles que par les membres de tes salons, et sont stockés sur les serveurs Google Firebase dans l'UE.",
+    "pointDelete": "Tu peux supprimer ton compte et toutes tes données à tout moment dans les Réglages.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "termsNote": "En continuant, tu acceptes les Conditions d'utilisation. La Politique de confidentialité explique comment tes données sont traitées.",
+    "continue": "Continuer",
+    "back": "Retour"
+  }
+}

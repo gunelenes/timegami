@@ -1,0 +1,234 @@
+{
+  "common": {
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "close": "Schließen",
+    "loading": "Wird geladen…",
+    "nickname": "Dein Spitzname in diesem Raum",
+    "nicknamePlaceholder": "z. B. Lena"
+  },
+  "home": {
+    "title": "Timegami",
+    "tagline": "Füll jede Zelle der Zeit.",
+    "newChallenge": "Neue Challenge",
+    "join": "Mit Code beitreten",
+    "myRooms": "Meine Challenges",
+    "emptyTitle": "Starte deine erste Challenge",
+    "empty": "Erstelle eine oder tritt mit dem Einladungscode deiner Freunde bei.",
+    "members_one": "{{count}} Spieler",
+    "members_other": "{{count}} Spieler"
+  },
+  "templates": {
+    "everyMinuteOfDay": "Jede Minute des Tages",
+    "every10MinutesOfDay": "Alle 10 Minuten des Tages",
+    "everyHourOfWeek": "Jede Stunde der Woche",
+    "everyDayOfYear": "Jeder Tag des Jahres",
+    "matchMinutes": "Jede Minute eines 90-Minuten-Spiels",
+    "dailyStreak365": "365-Tage-Serie",
+    "custom": "Eigene"
+  },
+  "create": {
+    "title": "Neue Challenge",
+    "name": "Name der Challenge",
+    "namePlaceholder": "z. B. Jede Minute pinkeln",
+    "emoji": "Symbol",
+    "template": "Raster",
+    "kind": "Art",
+    "kindCollection": "Sammeln",
+    "kindCollectionHint": "Füll jede Zelle mindestens einmal, in deinem Tempo. Es dauert, so lange es dauert.",
+    "kindStreak": "Serie",
+    "kindStreakHint": "Eine Zelle pro Kalendertag. Ein verpasster Tag beendet die Serie, aber du kannst weitermachen.",
+    "cycle": "Zyklus",
+    "cycleDay": "Tag",
+    "cycleWeek": "Woche",
+    "cycleYear": "Jahr",
+    "cycleFree": "Ohne Uhr",
+    "cycleFreeHint": "Du wählst die Zelle selbst, z. B. die Minute eines Tors.",
+    "unit": "Zelleneinheit",
+    "unitMinute": "Minute",
+    "unitHour": "Stunde",
+    "unitDay": "Tag",
+    "step": "Einheiten pro Zelle",
+    "cellCount": "Anzahl der Zellen",
+    "days": "Anzahl der Tage",
+    "startsToday": "Beginnt heute ({{date}}).",
+    "summary_one": "{{count}} Zelle",
+    "summary_other": "{{count}} Zellen",
+    "invalid": "Diese Kombination teilt den Zyklus nicht gleichmäßig. Versuch einen anderen Schritt.",
+    "submit": "Raum erstellen"
+  },
+  "join": {
+    "title": "Einer Challenge beitreten",
+    "code": "Einladungscode",
+    "submit": "Beitreten"
+  },
+  "room": {
+    "myBoard": "Mein Brett",
+    "sharedBoard": "Gemeinsames Brett",
+    "now": "Gerade passiert!",
+    "nowUnavailable": "Die Serie läuft heute nicht.",
+    "nowEmpty": "Freie Zelle!",
+    "nowMine_one": "Schon gefüllt",
+    "nowMine_other": "Schon gefüllt ×{{count}}",
+    "current": "Jetzt",
+    "newCell": "Neue Zelle! {{cell}} 🎉",
+    "repeatCell": "{{cell}} schon wieder (×{{count}})",
+    "missing": "fehlen",
+    "rank": "Platz",
+    "currentStreak_one": "Tag in Serie",
+    "currentStreak_other": "Tage in Serie",
+    "longestStreak": "beste Serie",
+    "daysFilled": "Tage gefüllt",
+    "tapCell": "Tippe auf eine Zelle, um sie zu markieren.",
+    "invite": "Einladungscode",
+    "share": "Einladen",
+    "regenerate": "Neuer Code",
+    "regenerateConfirm": "Der alte Code funktioniert dann nicht mehr. Fortfahren?",
+    "shareMessage": "Mach mit bei meiner Timegami-Challenge \"{{name}}\" {{emoji}} – Code: {{code}}\n{{link}}",
+    "tapRow": "Tippe auf eine Zeile zum Vergrößern.",
+    "players": "Spieler",
+    "you": "du",
+    "notFound": "Diese Challenge gibt es nicht mehr oder du bist nicht dabei.",
+    "heatBoard": "Heatmap",
+    "heatLegend": "Dunkler = mehr Spieler (bis zu {{count}})",
+    "nextEmpty": "Nächste freie: {{cell}} · {{when}}",
+    "missingTitle": "Fehlende Zellen",
+    "missingMore": "+{{count}} weitere Bereiche",
+    "missingNone": "Nichts fehlt – Raster komplett! 🎉",
+    "activityTitle": "Letzte Aktivität",
+    "activityEmpty": "Noch keine Einträge. Fang du an!",
+    "activityNew": "hat {{cell}} geschnappt",
+    "activityRepeat": "hat {{cell}} erneut markiert",
+    "hourComplete": "Stunde {{hour}} komplett! ⏰",
+    "rename": "Spitznamen ändern",
+    "renameSave": "Speichern",
+    "shareImage": "Als Bild teilen",
+    "reminderTitle": "Halte deine Serie",
+    "reminderBody": "Wir erinnern dich um 20:00 an Tagen ohne Eintrag.",
+    "reminderEnable": "Erinnerungen einschalten",
+    "reminderOn": "Erinnerung um 20:00 an Tagen ohne Eintrag",
+    "leave": "Challenge verlassen",
+    "leaveConfirmTitle": "Diese Challenge verlassen?",
+    "leaveConfirmBody": "Alle deine Einträge in dieser Challenge werden gelöscht. Mit dem Einladungscode kannst du wieder beitreten, aber deine Einträge kommen nicht zurück.",
+    "leaveOwnerBody": "Alle deine Einträge in dieser Challenge werden gelöscht, und der am längsten dabei Spielende wird Besitzer.",
+    "leaveButton": "Verlassen",
+    "deleteRoom": "Challenge löschen",
+    "deleteConfirmTitle": "Challenge für alle löschen?",
+    "deleteConfirmBody": "Das kann nicht rückgängig gemacht werden. Die Einträge aller Spielenden werden gelöscht und die Challenge verschwindet für alle.",
+    "deleteSoloBody": "Das kann nicht rückgängig gemacht werden. Alle deine Einträge in dieser Challenge werden gelöscht."
+  },
+  "cell": {
+    "empty": "Diese Zelle hat noch niemand gefüllt.",
+    "add": "Hier eintragen",
+    "notePlaceholder": "Notiz (optional)",
+    "live": "live",
+    "manual": "manuell hinzugefügt",
+    "deleteConfirm": "Diesen Eintrag löschen?"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "systemLanguage": "Gerätesprache",
+    "appearance": "Erscheinungsbild",
+    "appearanceSystem": "Auto",
+    "appearanceLight": "Hell",
+    "appearanceDark": "Dunkel",
+    "theme": "Design",
+    "notifications": "Benachrichtigungen",
+    "streakReminders": "Serien-Erinnerungen",
+    "streakRemindersHint": "Um 20:00 an Tagen, an denen du eine Serie noch nicht eingetragen hast.",
+    "permissionDenied": "Benachrichtigungen für Timegami sind aus. Schalte sie in den Einstellungen deines Telefons ein.",
+    "privacySection": "Datenschutz & Konto",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt & Datenanfragen",
+    "deleteAccount": "Konto und Daten löschen",
+    "deleteAccountHint": "Löscht alle deine Einträge, Mitgliedschaften und dein Konto dauerhaft. Räume, die dir gehören, gehen an ein anderes Mitglied über oder werden gelöscht, wenn niemand mehr darin ist.",
+    "deleteConfirmTitle": "Alles löschen?",
+    "deleteConfirmBody": "Das kann nicht rückgängig gemacht werden. Alle deine Einträge und Raummitgliedschaften werden gelöscht.",
+    "deleteConfirmButton": "Löschen",
+    "deleted": "Dein Konto und deine Daten wurden gelöscht.",
+    "deleteFailed": "Löschen fehlgeschlagen. Prüf deine Verbindung und versuch es erneut."
+  },
+  "themes": {
+    "playful": "Verspielt"
+  },
+  "errors": {
+    "invalid_nickname": "Der Spitzname muss 1–20 Zeichen lang sein.",
+    "invalid_code": "Kein Raum mit diesem Code gefunden.",
+    "room_full": "Dieser Raum ist voll.",
+    "invalid_cell": "Diese Zelle liegt außerhalb des Rasters.",
+    "no_clock": "Dieses Raster hat keine Uhr; tippe stattdessen auf eine Zelle.",
+    "name_required": "Gib der Challenge einen Namen.",
+    "generic": "Etwas ist schiefgelaufen. Prüf deine Verbindung und versuch es erneut.",
+    "not_owner": "Das kann nur der Besitzer."
+  },
+  "time": {
+    "inMinutes_one": "in {{count}} Min.",
+    "inMinutes_other": "in {{count}} Min.",
+    "inHours_one": "in {{count}} Std.",
+    "inHours_other": "in {{count}} Std.",
+    "inHoursMinutes": "in {{hours}} Std. {{minutes}} Min.",
+    "inDays_one": "in {{count}} Tag",
+    "inDays_other": "in {{count}} Tagen",
+    "justNow": "gerade eben",
+    "minutesAgo_one": "vor {{count}} Min.",
+    "minutesAgo_other": "vor {{count}} Min.",
+    "hoursAgo_one": "vor {{count}} Std.",
+    "hoursAgo_other": "vor {{count}} Std.",
+    "daysAgo_one": "vor {{count}} Tag",
+    "daysAgo_other": "vor {{count}} Tagen"
+  },
+  "badges": {
+    "title": "Abzeichen",
+    "locked": "gesperrt",
+    "newBadge": "NEUES ABZEICHEN",
+    "great": "Super!",
+    "firstCell": {
+      "name": "Erste Zelle",
+      "description": "Füll deine erste Zelle."
+    },
+    "quarter": {
+      "name": "Ein Viertel",
+      "description": "Füll 25 % des Rasters."
+    },
+    "half": {
+      "name": "Halbzeit",
+      "description": "Füll 50 % des Rasters."
+    },
+    "complete": {
+      "name": "Origami-Meister",
+      "description": "Füll das ganze Raster."
+    },
+    "nightOwl": {
+      "name": "Nachteule",
+      "description": "Füll eine Zelle zwischen 00:00 und 04:59."
+    },
+    "fullHour": {
+      "name": "Volle Stunde",
+      "description": "Füll alle Zellen einer Stunde."
+    },
+    "streak7": {
+      "name": "Wochenserie",
+      "description": "7 Tage am Stück."
+    },
+    "streak30": {
+      "name": "Monatsserie",
+      "description": "30 Tage am Stück."
+    }
+  },
+  "notifications": {
+    "streakBody": "Du hast heute noch nichts eingetragen – lass deine Serie nicht reißen! 🔥"
+  },
+  "welcome": {
+    "title": "Bevor es losgeht",
+    "pointAnonymous": "Keine Registrierung: Du bekommst eine anonyme ID. Wir fragen nie nach deiner E-Mail-Adresse oder deinem echten Namen.",
+    "pointShared": "Dein Spitzname und deine Einträge sind nur für die Leute in deinen Räumen sichtbar und werden auf Google-Firebase-Servern in der EU gespeichert.",
+    "pointDelete": "Du kannst dein Konto und alle Daten jederzeit in den Einstellungen löschen.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "termsNote": "Mit „Weiter“ stimmst du den Nutzungsbedingungen zu. Wie deine Daten verarbeitet werden, erklärt die Datenschutzerklärung.",
+    "continue": "Weiter",
+    "back": "Zurück"
+  }
+}

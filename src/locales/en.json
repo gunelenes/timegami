@@ -1,0 +1,234 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "close": "Close",
+    "loading": "Loading…",
+    "nickname": "Your nickname in this room",
+    "nicknamePlaceholder": "e.g. Alex"
+  },
+  "home": {
+    "title": "Timegami",
+    "tagline": "Fill every cell of time.",
+    "newChallenge": "New challenge",
+    "join": "Join with code",
+    "myRooms": "My challenges",
+    "emptyTitle": "Start your first challenge",
+    "empty": "Create one, or join your friends with their invite code.",
+    "members_one": "{{count}} player",
+    "members_other": "{{count}} players"
+  },
+  "templates": {
+    "everyMinuteOfDay": "Every minute of the day",
+    "every10MinutesOfDay": "Every 10 minutes of the day",
+    "everyHourOfWeek": "Every hour of the week",
+    "everyDayOfYear": "Every day of the year",
+    "matchMinutes": "Every minute of a 90' match",
+    "dailyStreak365": "365-day streak",
+    "custom": "Custom"
+  },
+  "create": {
+    "title": "New challenge",
+    "name": "Challenge name",
+    "namePlaceholder": "e.g. Pee every minute",
+    "emoji": "Icon",
+    "template": "Grid",
+    "kind": "Type",
+    "kindCollection": "Collect",
+    "kindCollectionHint": "Fill each cell at least once, at your own pace. Takes as long as it takes.",
+    "kindStreak": "Streak",
+    "kindStreakHint": "One cell per day on the calendar. Missing a day breaks the streak, but you can keep going.",
+    "cycle": "Cycle",
+    "cycleDay": "Day",
+    "cycleWeek": "Week",
+    "cycleYear": "Year",
+    "cycleFree": "No clock",
+    "cycleFreeHint": "You pick the cell yourself, e.g. the minute of a goal.",
+    "unit": "Cell unit",
+    "unitMinute": "Minute",
+    "unitHour": "Hour",
+    "unitDay": "Day",
+    "step": "Units per cell",
+    "cellCount": "Number of cells",
+    "days": "Number of days",
+    "startsToday": "Starts today ({{date}}).",
+    "summary_one": "{{count}} cell",
+    "summary_other": "{{count}} cells",
+    "invalid": "This combination does not split the cycle evenly. Try another step.",
+    "submit": "Create room"
+  },
+  "join": {
+    "title": "Join a challenge",
+    "code": "Invite code",
+    "submit": "Join"
+  },
+  "room": {
+    "myBoard": "My board",
+    "sharedBoard": "Shared board",
+    "now": "It happened now!",
+    "nowUnavailable": "The streak is not running today.",
+    "nowEmpty": "Empty cell!",
+    "nowMine_one": "Already filled",
+    "nowMine_other": "Already filled ×{{count}}",
+    "current": "Now",
+    "newCell": "New cell! {{cell}} 🎉",
+    "repeatCell": "{{cell}} again (×{{count}})",
+    "missing": "missing",
+    "rank": "rank",
+    "currentStreak_one": "day streak",
+    "currentStreak_other": "day streak",
+    "longestStreak": "best streak",
+    "daysFilled": "days filled",
+    "tapCell": "Tap a cell to mark it.",
+    "invite": "Invite code",
+    "share": "Invite",
+    "regenerate": "New code",
+    "regenerateConfirm": "The old code will stop working. Continue?",
+    "shareMessage": "Join my Timegami challenge \"{{name}}\" {{emoji}} with code {{code}}\n{{link}}",
+    "tapRow": "Tap a row to zoom in.",
+    "players": "Players",
+    "you": "you",
+    "notFound": "This challenge no longer exists, or you are not in it.",
+    "heatBoard": "Heat map",
+    "heatLegend": "Darker = more players (up to {{count}})",
+    "nextEmpty": "Next empty: {{cell}} · {{when}}",
+    "missingTitle": "Missing cells",
+    "missingMore": "+{{count}} more ranges",
+    "missingNone": "Nothing missing — grid complete! 🎉",
+    "activityTitle": "Recent activity",
+    "activityEmpty": "No marks yet. Be the first!",
+    "activityNew": "captured {{cell}}",
+    "activityRepeat": "marked {{cell}} again",
+    "hourComplete": "{{hour}} hour complete! ⏰",
+    "rename": "Change nickname",
+    "renameSave": "Save",
+    "shareImage": "Share image",
+    "reminderTitle": "Keep your streak",
+    "reminderBody": "We'll remind you at 20:00 on days you haven't marked yet.",
+    "reminderEnable": "Turn on reminders",
+    "reminderOn": "Reminder at 20:00 on unmarked days",
+    "leave": "Leave challenge",
+    "leaveConfirmTitle": "Leave this challenge?",
+    "leaveConfirmBody": "All your marks in this challenge will be deleted. You can rejoin with the invite code, but your marks will not come back.",
+    "leaveOwnerBody": "All your marks in this challenge will be deleted and the longest-standing player becomes the owner.",
+    "leaveButton": "Leave",
+    "deleteRoom": "Delete challenge",
+    "deleteConfirmTitle": "Delete this challenge for everyone?",
+    "deleteConfirmBody": "This cannot be undone. Every player's marks are deleted and the challenge disappears for all of them.",
+    "deleteSoloBody": "This cannot be undone. All your marks in this challenge will be deleted."
+  },
+  "cell": {
+    "empty": "Nobody has filled this cell yet.",
+    "add": "Add a mark here",
+    "notePlaceholder": "Note (optional)",
+    "live": "live",
+    "manual": "added manually",
+    "deleteConfirm": "Delete this mark?"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "systemLanguage": "Device language",
+    "appearance": "Appearance",
+    "appearanceSystem": "Auto",
+    "appearanceLight": "Light",
+    "appearanceDark": "Dark",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "streakReminders": "Streak reminders",
+    "streakRemindersHint": "At 20:00 on days you haven't marked a streak yet.",
+    "permissionDenied": "Notifications are off for Timegami. Turn them on in your phone's settings.",
+    "privacySection": "Privacy & account",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "contact": "Contact & data requests",
+    "deleteAccount": "Delete my account and data",
+    "deleteAccountHint": "Deletes all your marks, memberships and your account for good. Rooms you own pass to another member, or are deleted if nobody else is in them.",
+    "deleteConfirmTitle": "Delete everything?",
+    "deleteConfirmBody": "This cannot be undone. All your marks and room memberships will be deleted.",
+    "deleteConfirmButton": "Delete",
+    "deleted": "Your account and data have been deleted.",
+    "deleteFailed": "Deletion failed. Check your connection and try again."
+  },
+  "themes": {
+    "playful": "Playful"
+  },
+  "errors": {
+    "invalid_nickname": "Nickname must be 1–20 characters.",
+    "invalid_code": "No room found with this code.",
+    "room_full": "This room is full.",
+    "invalid_cell": "This cell is outside the grid.",
+    "no_clock": "This grid has no clock; tap a cell instead.",
+    "name_required": "Give the challenge a name.",
+    "generic": "Something went wrong. Check your connection and try again.",
+    "not_owner": "Only the owner can do this."
+  },
+  "time": {
+    "inMinutes_one": "in {{count}} min",
+    "inMinutes_other": "in {{count}} min",
+    "inHours_one": "in {{count}} h",
+    "inHours_other": "in {{count}} h",
+    "inHoursMinutes": "in {{hours}} h {{minutes}} min",
+    "inDays_one": "in {{count}} day",
+    "inDays_other": "in {{count}} days",
+    "justNow": "just now",
+    "minutesAgo_one": "{{count}} min ago",
+    "minutesAgo_other": "{{count}} min ago",
+    "hoursAgo_one": "{{count}} h ago",
+    "hoursAgo_other": "{{count}} h ago",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago"
+  },
+  "badges": {
+    "title": "Badges",
+    "locked": "locked",
+    "newBadge": "NEW BADGE",
+    "great": "Awesome!",
+    "firstCell": {
+      "name": "First cell",
+      "description": "Fill your first cell."
+    },
+    "quarter": {
+      "name": "Quarter way",
+      "description": "Fill 25% of the grid."
+    },
+    "half": {
+      "name": "Halfway",
+      "description": "Fill 50% of the grid."
+    },
+    "complete": {
+      "name": "Origami master",
+      "description": "Fill the whole grid."
+    },
+    "nightOwl": {
+      "name": "Night owl",
+      "description": "Fill a cell between 00:00 and 04:59."
+    },
+    "fullHour": {
+      "name": "Full hour",
+      "description": "Fill every cell of one hour."
+    },
+    "streak7": {
+      "name": "Week streak",
+      "description": "7 days in a row."
+    },
+    "streak30": {
+      "name": "Month streak",
+      "description": "30 days in a row."
+    }
+  },
+  "notifications": {
+    "streakBody": "You haven't marked today yet — don't break your streak! 🔥"
+  },
+  "welcome": {
+    "title": "Before you start",
+    "pointAnonymous": "No sign-up: you get an anonymous ID. We never ask for your email or real name.",
+    "pointShared": "Your nickname and marks are visible only to the people in your rooms, and are stored on Google Firebase servers in the EU.",
+    "pointDelete": "You can delete your account and all your data at any time in Settings.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "termsNote": "By continuing you agree to the Terms of Use. The Privacy Policy explains how your data is processed.",
+    "continue": "Continue",
+    "back": "Back"
+  }
+}
