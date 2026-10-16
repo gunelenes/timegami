@@ -115,7 +115,12 @@
     "deleteRoom": "Challenge'ı sil",
     "deleteConfirmTitle": "Challenge herkes için silinsin mi?",
     "deleteConfirmBody": "Bu işlem geri alınamaz. Tüm oyuncuların kayıtları silinir ve challenge herkesin listesinden kalkar.",
-    "deleteSoloBody": "Bu işlem geri alınamaz. Bu challenge'daki tüm kayıtların silinir."
+    "deleteSoloBody": "Bu işlem geri alınamaz. Bu challenge'daki tüm kayıtların silinir.",
+    "playerActions": "{{name}} için seçenekler",
+    "removePlayer": "Challenge'dan çıkar",
+    "removeConfirmTitle": "{{name}} çıkarılsın mı?",
+    "removeConfirmBody": "Bu oyuncunun bu challenge'daki kayıtları silinir ve davet kodu yenilenir; eski kod artık çalışmaz.",
+    "removeButton": "Çıkar"
   },
   "cell": {
     "empty": "Bu hücreyi henüz kimse doldurmadı.",
@@ -230,5 +235,12 @@
     "termsNote": "Devam ederek Kullanım Koşulları'nı kabul etmiş olursun. Verilerinin nasıl işlendiği Aydınlatma Metni'nde açıklanmıştır.",
     "continue": "Devam et",
     "back": "Geri"
+  },
+  "report": {
+    "player": "Oyuncuyu bildir",
+    "room": "Challenge'ı bildir",
+    "subject": "Timegami bildirimi",
+    "body": "Ne oldu? Kısaca anlatır mısın:",
+    "noMailApp": "E-posta uygulaması bulunamadı. Bize {{email}} adresinden yazabilirsin."
   }
 }

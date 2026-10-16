@@ -115,7 +115,12 @@
     "deleteRoom": "Supprimer le défi",
     "deleteConfirmTitle": "Supprimer ce défi pour tout le monde ?",
     "deleteConfirmBody": "Cette action est irréversible. Les marques de tous les joueurs sont supprimées et le défi disparaît pour tous.",
-    "deleteSoloBody": "Cette action est irréversible. Toutes tes marques dans ce défi seront supprimées."
+    "deleteSoloBody": "Cette action est irréversible. Toutes tes marques dans ce défi seront supprimées.",
+    "playerActions": "Options pour {{name}}",
+    "removePlayer": "Retirer du défi",
+    "removeConfirmTitle": "Retirer {{name}} ?",
+    "removeConfirmBody": "Ses marques dans ce défi sont supprimées et le code d'invitation est renouvelé : l'ancien code ne fonctionne plus.",
+    "removeButton": "Retirer"
   },
   "cell": {
     "empty": "Personne n'a encore rempli cette case.",
@@ -230,5 +235,12 @@
     "termsNote": "En continuant, tu acceptes les Conditions d'utilisation. La Politique de confidentialité explique comment tes données sont traitées.",
     "continue": "Continuer",
     "back": "Retour"
+  },
+  "report": {
+    "player": "Signaler le joueur",
+    "room": "Signaler le défi",
+    "subject": "Signalement Timegami",
+    "body": "Que s'est-il passé ? Explique-nous en quelques mots :",
+    "noMailApp": "Aucune app de messagerie trouvée. Écris-nous à {{email}}."
   }
 }

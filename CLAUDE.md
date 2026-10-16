@@ -148,6 +148,15 @@ Dizin yapısı:
 4. 🟡 Ekranlar yazıldı (Ekim 2026), cihazda henüz denenmedi: `src/app/index.tsx` (odalarım), `create.tsx` (şablonlar + özel yapılandırma), `join.tsx` (kod + nickname, `timegami://join?code=` linki), `room/[id].tsx` (ızgara, "Şimdi oldu!", benim/ortak tahta, ilerleme/streak, oyuncu sıralaması, davet kodu paylaş/yenile). Izgara: `src/features/board/board-grid.tsx` (hücre küçükse satıra dokunup yakınlaştırma, paylaşımlı hücre = renk şeritleri), `cell-sheet.tsx` (hücre detayı, not ile kayıt, kendi kaydını silme). i18n: `src/lib/i18n.ts`, `src/locales/*.json`. Kullanıcının oda listesi: `users/{uid}/rooms/{roomId}`.
 4b. ✅ A tasarımı + tema altyapısı + 5 dil (Ekim 2026): yeni ana ekran (oda kartları, boş durum, ayarlar butonu), oda ekranı ("Şimdi oldu!" kartı + konfeti/titreşim, istatistik kutuları, ızgara kartı, oyuncu sıralaması, davet kartı), Ayarlar ekranı (`src/app/settings.tsx`). Cihazda henüz denenmedi.
 4c. ✅ Hızlı kazanımlar + motivasyon (13 Ekim 2026): takma ad değiştirme (oyuncu listesinde kalem), "Sıradaki boş: 14:52 · 15 dk sonra" ipucu, eksik hücre aralıkları listesi, ısı haritası görünümü (Benim / Ortak / Isı), son hareketler akışı, rozetler (`src/domain/badges.ts`; saklanmaz, hücrelerden hesaplanır) + yeni rozet kutlama ekranı, saat tamamlanınca "03:00 saati tamamlandı!", yerel seri hatırlatmaları (20:00, `expo-notifications`, sunucusuz; Ayarlar'da anahtar), paylaşılabilir 9:16 ızgara görseli (`react-native-view-shot` + `expo-sharing`, oda başlığındaki paylaş simgesi). Saf mantık: `src/domain/insights.ts`. Arayüz: `src/features/room/*`. **Karar:** arkadaş bildirimleri ("Ahmet 03:47'yi kaptı") Blaze plan + Cloud Functions gerektirdiği için şimdilik yok.
+4d. ✅ Mağaza hazırlığı (16 Ekim 2026):
+   - **Moderasyon (App Store kural 1.2):** oyuncu satırındaki "⋯" menüsünde herkes için "Oyuncuyu bildir", sahip için "Challenge'dan çıkar" var. Sahip olmayanlar oda ekranının altında "Challenge'ı bildir" görür.
+   - `removeMember()` çıkarılan oyuncunun kayıtlarını ve üyeliğini siler, davet kodunu da yeniler; böylece eski kodla geri dönülemez. Kural: `isRemoval`, deploy edildi ve gerçek projede test edildi.
+   - Bildirim, `CONTACT_EMAIL` adresine hazır doldurulmuş bir e-posta açar (`src/features/room/report.ts`).
+   - Yasal sayfalar Firebase Hosting'de yayında: https://timegami-206fe.web.app (`/privacy.html`, `/terms.html`, `/<dil>/...`). timegami.com proje sahibine ait; ileride Hosting'e özel alan adı olarak bağlanacak.
+   - EAS projesi: `@enesgunel/timegami` (`extra.eas.projectId`). Firebase değişkenleri EAS'ta preview + production ortamlarında tanımlı.
+   - Android bildirim ikonu: `assets/brand/notification-icon.png` (`expo-notifications` eklentisi).
+   - Expo yama sürümleri güncellendi, `expo-doctor` 21/21 kontrolden geçti.
+   - `npx expo lint` çalışıyor ama React Compiler kurallarından 9 eski hata veriyor (efekt içinde `setState`, render sırasında `Date.now()`); yayını engellemiyor, sonra temizlenecek.
 5. Telefonda deneme ve düzeltmeler (Hermes'te `Intl` saat dilimi/`formatToParts` desteğini doğrula), nickname değiştirme UI'ı, hesap bağlama (Apple/Google).
 6. Cilalama, i18n, mağaza hazırlığı.
 

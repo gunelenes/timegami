@@ -40,6 +40,7 @@ import { BadgeCelebration, BadgesCard } from '@/features/room/badges';
 import { MissingList } from '@/features/room/missing-list';
 import { ReminderCard } from '@/features/room/reminder-card';
 import { RenameSheet } from '@/features/room/rename-sheet';
+import { reportByEmail } from '@/features/room/report';
 import { ShareImage, canShareImage, type ShareImageData } from '@/features/room/share-image';
 import { useBadgeCelebrations } from '@/features/room/use-badge-celebrations';
 import {
@@ -52,6 +53,7 @@ import {
   markCell,
   markNow,
   regenerateInviteCode,
+  removeMember,
 } from '@/features/rooms/api';
 import { errorMessage, useNow, useRoomData, useUid } from '@/features/rooms/hooks';
 import { mixColor } from '@/lib/color';
@@ -334,7 +336,7 @@ function RoomBoard({ uid, room, members, marks }: { uid: string; room: Room; mem
 
         <ActivityFeed marks={marks} members={memberMap} now={now} labelOf={labelOf} onCellPress={setOpenCell} />
         <BadgesCard available={availableBadges} earned={earned} />
-        <Players ranked={ranked} myUid={uid} onRename={() => setRenaming(true)} />
+        <Players room={room} ranked={ranked} myUid={uid} onRename={() => setRenaming(true)} />
         <InviteCard room={room} isOwner={room.ownerId === uid} />
         <RoomActions room={room} uid={uid} />
       </ScrollView>
@@ -409,9 +411,29 @@ function StreakStats({ streak, total }: { streak: StreakProgress; total: number 
   );
 }
 
-function Players({ ranked, myUid, onRename }: { ranked: ReturnType<typeof rankPlayers>; myUid: string; onRename: () => void }) {
+function Players({ room, ranked, myUid, onRename }: { room: Room; ranked: ReturnType<typeof rankPlayers>; myUid: string; onRename: () => void }) {
   const { t } = useTranslation();
   const { colors } = useAppTheme();
+  const isOwner = room.ownerId === myUid;
+
+  const remove = (player: Member) =>
+    Alert.alert(t('room.removeConfirmTitle', { name: player.nickname }), t('room.removeConfirmBody'), [
+      { text: t('common.cancel'), style: 'cancel' },
+      {
+        text: t('room.removeButton'),
+        style: 'destructive',
+        onPress: () => removeMember(room.id, player.uid).catch((e) => Alert.alert(errorMessage(t, e))),
+      },
+    ]);
+
+  // Report for everyone; the owner can also remove the player (moderation, App Store guideline 1.2).
+  const openActions = (player: Member) =>
+    Alert.alert(player.nickname, undefined, [
+      { text: t('report.player'), onPress: () => reportByEmail(t, { roomId: room.id, roomName: room.name, player }) },
+      ...(isOwner ? [{ text: t('room.removePlayer'), style: 'destructive' as const, onPress: () => remove(player) }] : []),
+      { text: t('common.cancel'), style: 'cancel' },
+    ]);
+
   return (
     <Card style={styles.players}>
       <ThemedText type="heading">{t('room.players')}</ThemedText>
@@ -427,9 +449,17 @@ function Players({ ranked, myUid, onRename }: { ranked: ReturnType<typeof rankPl
             {m.nickname}
             {m.uid === myUid ? ` · ${t('room.you')}` : ''}
           </ThemedText>
-          {m.uid === myUid && (
+          {m.uid === myUid ? (
             <Pressable accessibilityRole="button" accessibilityLabel={t('room.rename')} hitSlop={12} onPress={onRename}>
               <Icon name="pencil" size={18} color={colors.textSecondary} />
+            </Pressable>
+          ) : (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('room.playerActions', { name: m.nickname })}
+              hitSlop={12}
+              onPress={() => openActions(m)}>
+              <Icon name="more" size={18} strokeWidth={3.6} color={colors.textSecondary} />
             </Pressable>
           )}
           <ThemedText type="heading">{m.filled}</ThemedText>
@@ -532,6 +562,15 @@ function RoomActions({ room, uid }: { room: Room; uid: string }) {
           loading={busy === 'delete'}
           disabled={busy !== null}
           onPress={() => confirm('delete')}
+        />
+      )}
+      {!isOwner && (
+        <Button
+          title={t('report.room')}
+          variant="secondary"
+          size="small"
+          disabled={busy !== null}
+          onPress={() => reportByEmail(t, { roomId: room.id, roomName: room.name })}
         />
       )}
     </View>

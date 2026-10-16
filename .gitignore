@@ -44,3 +44,4 @@ example
 
 # generated legal pages (npm run legal:build)
 legal-site/
+.firebase/

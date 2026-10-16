@@ -191,6 +191,27 @@ export async function renameInRoom(roomId: string, rawNickname: string): Promise
   await updateDoc(memberRef(roomId, uid), { nickname });
 }
 
+/**
+ * Owner only: removes another player with all of their marks and renews the invite code, so the old
+ * code cannot bring them back. Their home list drops the room by itself (subscribeMyRooms).
+ */
+export async function removeMember(roomId: string, memberUid: string): Promise<void> {
+  const uid = await ensureSignedIn();
+  if (memberUid === uid) throw new RoomError('not_owner');
+  const room = (await getDoc(roomRef(roomId))).data() as Omit<Room, 'id'> | undefined;
+  if (!room || room.ownerId !== uid) throw new RoomError('not_owner');
+
+  const theirs = await getDocs(query(marksCol(roomId), where('uid', '==', memberUid)));
+  await deleteInBatches([...theirs.docs.map((d) => d.ref), memberRef(roomId, memberUid)]);
+
+  await runTransaction(db, async (tx) => {
+    const current = (await tx.get(roomRef(roomId))).data() as Omit<Room, 'id'>;
+    const inviteCode = await claimInviteCode(tx, roomId);
+    tx.delete(codeRef(current.inviteCode));
+    tx.update(roomRef(roomId), { [`memberColors.${memberUid}`]: deleteField(), inviteCode });
+  });
+}
+
 /** Firestore allows 500 writes per batch; stay below it. */
 const BATCH_LIMIT = 450;
 

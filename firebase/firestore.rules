@@ -47,7 +47,7 @@ service cloud.firestore {
         && request.resource.data.name is string
         && request.resource.data.name.size() >= 1 && request.resource.data.name.size() <= 60;
 
-      allow update: if isOwnerUpdate() || isJoin() || isLeave() || isOwnerHandOver();
+      allow update: if isOwnerUpdate() || isJoin() || isLeave() || isOwnerHandOver() || isRemoval();
 
       // The owner may delete the room for everyone (after clearing its marks and members).
       allow delete: if signedIn() && resource.data.ownerId == request.auth.uid;
@@ -93,6 +93,18 @@ service cloud.firestore {
           && colors.addedKeys().size() == 0
           && colors.changedKeys().size() == 0
           && request.resource.data.ownerId in request.resource.data.memberColors;
+      }
+
+      // Moderation: the owner removes one other player and may renew the invite code in the same write.
+      function isRemoval() {
+        let colors = request.resource.data.memberColors.diff(resource.data.memberColors);
+        return signedIn()
+          && resource.data.ownerId == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberColors', 'inviteCode'])
+          && colors.removedKeys().size() == 1
+          && !(request.auth.uid in colors.removedKeys())
+          && colors.addedKeys().size() == 0
+          && colors.changedKeys().size() == 0;
       }
 
       match /members/{uid} {

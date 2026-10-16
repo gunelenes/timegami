@@ -115,7 +115,12 @@
     "deleteRoom": "Delete challenge",
     "deleteConfirmTitle": "Delete this challenge for everyone?",
     "deleteConfirmBody": "This cannot be undone. Every player's marks are deleted and the challenge disappears for all of them.",
-    "deleteSoloBody": "This cannot be undone. All your marks in this challenge will be deleted."
+    "deleteSoloBody": "This cannot be undone. All your marks in this challenge will be deleted.",
+    "playerActions": "Options for {{name}}",
+    "removePlayer": "Remove from challenge",
+    "removeConfirmTitle": "Remove {{name}}?",
+    "removeConfirmBody": "Their marks in this challenge are deleted and the invite code is renewed, so the old code no longer works.",
+    "removeButton": "Remove"
   },
   "cell": {
     "empty": "Nobody has filled this cell yet.",
@@ -230,5 +235,12 @@
     "termsNote": "By continuing you agree to the Terms of Use. The Privacy Policy explains how your data is processed.",
     "continue": "Continue",
     "back": "Back"
+  },
+  "report": {
+    "player": "Report player",
+    "room": "Report challenge",
+    "subject": "Timegami report",
+    "body": "What happened? Tell us briefly:",
+    "noMailApp": "No email app found. Write to us at {{email}}."
   }
 }

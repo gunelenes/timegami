@@ -115,7 +115,12 @@
     "deleteRoom": "Eliminar reto",
     "deleteConfirmTitle": "¿Eliminar este reto para todos?",
     "deleteConfirmBody": "No se puede deshacer. Se eliminan las marcas de todos los jugadores y el reto desaparece para todos.",
-    "deleteSoloBody": "No se puede deshacer. Se eliminarán todas tus marcas en este reto."
+    "deleteSoloBody": "No se puede deshacer. Se eliminarán todas tus marcas en este reto.",
+    "playerActions": "Opciones para {{name}}",
+    "removePlayer": "Quitar del reto",
+    "removeConfirmTitle": "¿Quitar a {{name}}?",
+    "removeConfirmBody": "Se borran sus marcas en este reto y se renueva el código de invitación, así que el código antiguo deja de funcionar.",
+    "removeButton": "Quitar"
   },
   "cell": {
     "empty": "Nadie ha llenado esta celda todavía.",
@@ -230,5 +235,12 @@
     "termsNote": "Al continuar aceptas las Condiciones de uso. La Política de privacidad explica cómo se tratan tus datos.",
     "continue": "Continuar",
     "back": "Atrás"
+  },
+  "report": {
+    "player": "Denunciar jugador",
+    "room": "Denunciar reto",
+    "subject": "Denuncia en Timegami",
+    "body": "¿Qué ha pasado? Cuéntanoslo brevemente:",
+    "noMailApp": "No se encontró ninguna app de correo. Escríbenos a {{email}}."
   }
 }

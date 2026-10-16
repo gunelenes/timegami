@@ -115,7 +115,12 @@
     "deleteRoom": "Challenge löschen",
     "deleteConfirmTitle": "Challenge für alle löschen?",
     "deleteConfirmBody": "Das kann nicht rückgängig gemacht werden. Die Einträge aller Spielenden werden gelöscht und die Challenge verschwindet für alle.",
-    "deleteSoloBody": "Das kann nicht rückgängig gemacht werden. Alle deine Einträge in dieser Challenge werden gelöscht."
+    "deleteSoloBody": "Das kann nicht rückgängig gemacht werden. Alle deine Einträge in dieser Challenge werden gelöscht.",
+    "playerActions": "Optionen für {{name}}",
+    "removePlayer": "Aus der Challenge entfernen",
+    "removeConfirmTitle": "{{name}} entfernen?",
+    "removeConfirmBody": "Die Markierungen dieser Person in dieser Challenge werden gelöscht und der Einladungscode wird erneuert; der alte Code funktioniert nicht mehr.",
+    "removeButton": "Entfernen"
   },
   "cell": {
     "empty": "Diese Zelle hat noch niemand gefüllt.",
@@ -230,5 +235,12 @@
     "termsNote": "Mit „Weiter“ stimmst du den Nutzungsbedingungen zu. Wie deine Daten verarbeitet werden, erklärt die Datenschutzerklärung.",
     "continue": "Weiter",
     "back": "Zurück"
+  },
+  "report": {
+    "player": "Spieler melden",
+    "room": "Challenge melden",
+    "subject": "Timegami-Meldung",
+    "body": "Was ist passiert? Beschreib es kurz:",
+    "noMailApp": "Keine E-Mail-App gefunden. Schreib uns an {{email}}."
   }
 }

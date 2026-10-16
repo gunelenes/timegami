@@ -39,11 +39,25 @@
         }
       ],
       "expo-localization",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/brand/notification-icon.png",
+          "color": "#6C3BFF"
+        }
+      ],
       "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "561000e1-433d-4271-a578-2f98cf64549d"
+      }
+    },
+    "owner": "enesgunel"
   }
 }

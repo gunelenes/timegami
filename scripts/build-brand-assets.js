@@ -77,6 +77,8 @@ const ASSETS = [
   // Splash: drawn on the yellow splash background (app.json), so the ring alone.
   { file: 'splash-icon.png', size: 512, scale: 1.3 },
   { file: 'favicon.png', size: 48, background: BACKGROUND, rounded: true },
+  // Android status-bar notification icon: alpha-only silhouette (expo-notifications plugin, app.json).
+  { file: 'notification-icon.png', size: 96, scale: 1.25, mono: true },
 ];
 
 function findBrowser() {
