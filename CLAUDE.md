@@ -145,8 +145,8 @@ Dizin yapısı:
 1. ✅ Teknik altyapı (Expo SDK 57 + Firebase JS SDK) ve Expo projesi (Ekim 2026).
 2. ✅ `src/domain`: ızgara yapılandırması, `timestampToCell`, streak/ilerleme, renk/kod/nickname + testler (`npm test`).
 3. ✅ Firebase: `src/lib/firebase.ts`, `src/features/rooms/api.ts`, `firebase/firestore.rules`. Anonymous giriş açık, kurallar deploy edildi (`npx firebase-tools deploy --only firestore:rules`); oluştur/katıl/kayıt/kod yenileme ve yetki reddi senaryoları gerçek projede uçtan uca doğrulandı (Ekim 2026).
-4. 🟡 Ekranlar yazıldı (Ekim 2026), cihazda henüz denenmedi: `src/app/index.tsx` (odalarım), `create.tsx` (şablonlar + özel yapılandırma), `join.tsx` (kod + nickname, `timegami://join?code=` linki), `room/[id].tsx` (ızgara, "Şimdi oldu!", benim/ortak tahta, ilerleme/streak, oyuncu sıralaması, davet kodu paylaş/yenile). Izgara: `src/features/board/board-grid.tsx` (hücre küçükse satıra dokunup yakınlaştırma, paylaşımlı hücre = renk şeritleri), `cell-sheet.tsx` (hücre detayı, not ile kayıt, kendi kaydını silme). i18n: `src/lib/i18n.ts`, `src/locales/*.json`. Kullanıcının oda listesi: `users/{uid}/rooms/{roomId}`.
-4b. ✅ A tasarımı + tema altyapısı + 5 dil (Ekim 2026): yeni ana ekran (oda kartları, boş durum, ayarlar butonu), oda ekranı ("Şimdi oldu!" kartı + konfeti/titreşim, istatistik kutuları, ızgara kartı, oyuncu sıralaması, davet kartı), Ayarlar ekranı (`src/app/settings.tsx`). Cihazda henüz denenmedi.
+4. ✅ Ekranlar (Ekim 2026; 16 Ekim'de iPhone'da Expo Go + TestFlight ile denendi): `src/app/index.tsx` (odalarım), `create.tsx` (şablonlar + özel yapılandırma), `join.tsx` (kod + nickname, `timegami://join?code=` linki), `room/[id].tsx` (ızgara, "Şimdi oldu!", benim/ortak tahta, ilerleme/streak, oyuncu sıralaması, davet kodu paylaş/yenile). Izgara: `src/features/board/board-grid.tsx` (hücre küçükse satıra dokunup yakınlaştırma, paylaşımlı hücre = renk şeritleri), `cell-sheet.tsx` (hücre detayı, not ile kayıt, kendi kaydını silme). i18n: `src/lib/i18n.ts`, `src/locales/*.json`. Kullanıcının oda listesi: `users/{uid}/rooms/{roomId}`.
+4b. ✅ A tasarımı + tema altyapısı + 5 dil (Ekim 2026): yeni ana ekran (oda kartları, boş durum, ayarlar butonu), oda ekranı ("Şimdi oldu!" kartı + konfeti/titreşim, istatistik kutuları, ızgara kartı, oyuncu sıralaması, davet kartı), Ayarlar ekranı (`src/app/settings.tsx`). iPhone'da denendi (16 Ekim).
 4c. ✅ Hızlı kazanımlar + motivasyon (13 Ekim 2026): takma ad değiştirme (oyuncu listesinde kalem), "Sıradaki boş: 14:52 · 15 dk sonra" ipucu, eksik hücre aralıkları listesi, ısı haritası görünümü (Benim / Ortak / Isı), son hareketler akışı, rozetler (`src/domain/badges.ts`; saklanmaz, hücrelerden hesaplanır) + yeni rozet kutlama ekranı, saat tamamlanınca "03:00 saati tamamlandı!", yerel seri hatırlatmaları (20:00, `expo-notifications`, sunucusuz; Ayarlar'da anahtar), paylaşılabilir 9:16 ızgara görseli (`react-native-view-shot` + `expo-sharing`, oda başlığındaki paylaş simgesi). Saf mantık: `src/domain/insights.ts`. Arayüz: `src/features/room/*`. **Karar:** arkadaş bildirimleri ("Ahmet 03:47'yi kaptı") Blaze plan + Cloud Functions gerektirdiği için şimdilik yok.
 4d. ✅ Mağaza hazırlığı (16 Ekim 2026):
    - **Moderasyon (App Store kural 1.2):** oyuncu satırındaki "⋯" menüsünde herkes için "Oyuncuyu bildir", sahip için "Challenge'dan çıkar" var. Sahip olmayanlar oda ekranının altında "Challenge'ı bildir" görür.
@@ -174,16 +174,42 @@ Dizin yapısı:
 - Gelir modeli: ücretsiz + premium?
 - Marka kontrolü: mağaza isim müsaitliği, alan adı, TÜRKPATENT / EUIPO / USPTO.
 
-## 11. Kaldığımız yer (12 Ekim 2026)
+## 11. Kaldığımız yer (16 Ekim 2026): App Store yayını sürüyor
 
-**Durum:** Yol haritasının 1–3. adımları bitti, 4. adımın (ekranlar) kodu yazıldı ve A tasarımıyla yenilendi (12 Ekim 2026), ama **telefonda hiç denenmedi**. Tüm iş **commit edilmedi**; proje sahibi kontrol ettikten sonra tek seferde commit edilecek.
+**Durum:** Uygulama özellik olarak MVP'yi tamamladı ve **ilk iOS derlemesi TestFlight'ta**. Proje sahibi iPhone'da hem Expo Go hem TestFlight ile denedi, sorun görmedi. Şu an App Store Connect'te mağaza sayfası dolduruluyor. Proje sahibi bu kısma **Claude web sürümünde** ekran görüntüleriyle devam ediyor (orada kod/terminal erişimi yok; sadece rehberlik).
 
-**Doğrulananlar:** 62 test (`npm test`: domain + çeviri dosyaları), `npx tsc --noEmit` hatasız (yeni rota eklenince tipler `expo start` ile yeniden üretilir), Android bundle derlemesi (`npx expo export --platform android`), web SSR'da ana sayfa/oluştur/katıl ekranlarının Türkçe metinlerle oluşması, Firestore kurallarının gerçek projede uçtan uca testi (21 senaryo).
+**Yapılanlar (16 Ekim):**
+- Logo: "Hücre çemberi E" (bkz. Teknik altyapı → Logo).
+- Moderasyon: oyuncu bildirme ve odadan çıkarma (bkz. 4d).
+- Firestore kuralları güncel ve deploy edildi.
+- Yasal sayfalar yayında.
+- EAS projesi kuruldu, ortam değişkenleri tanımlandı.
 
-**Sonraki oturumda ilk iş:**
-1. Proje sahibinin telefonda Expo Go ile denemesi. Önerilen: aynı Wi-Fi'de `npx expo start --clear` (tünelsiz). Bakılacaklar: "Şimdi oldu!" butonundaki saat doğru mu (Hermes `Intl` saat dilimi / `formatToParts` desteği, özellikle Android), oda oluşturma, kayıt atma, ızgara performansı (1.440 hücre), hücre detay paneli.
-2. Gelen hata/ekran görüntülerine göre düzeltmeler.
-3. Sonra: nickname değiştirme UI'ı (`renameInRoom` API'si hazır), hesap bağlama (Apple/Google), ESLint kurulumu (projede yok; `npx expo lint` "Cannot find module 'eslint'" veriyor).
+**App Store yayın adımları:**
+1. ✅ Apple Developer Program üyeliği aktif (bireysel, Enes Günel).
+2. ✅ `npx eas-cli build --platform ios --profile production`: derleme 1.0.0 (2), bundle id `com.timegami.app`, sertifika ve profil EAS'ta.
+3. ✅ `npx eas-cli submit --platform ios --latest`: App Store Connect'te "Timegami" uygulama kaydı oluştu, derleme TestFlight'ta. App Store Connect API anahtarı EAS'ta saklı; sonraki yüklemeler giriş istemez.
+4. ✅ TestFlight Internal Testing ile iPhone'a kuruldu, sorun yok. İkon doğru (IPA içinden doğrulandı; App Store Connect işleme sırasında ikonu boş gösterebilir, normal).
+5. 🟡 App Store Connect formları. Bütün cevaplar ve metinler `store/app-store.md` dosyasında:
+   - App Information: kategori Lifestyle + Games/Casual, yaş derecelendirmesi 13+ (kullanıcı içeriği: Yes).
+   - Pricing: Free, tüm ülkeler.
+   - App Privacy: User ID + Other User Content, App Functionality, linked, no tracking.
+   - Gizlilik URL'si: https://timegami-206fe.web.app/privacy.html; destek URL'si: https://timegami-206fe.web.app
+6. ⬜ Ekran görüntüleri: en az 6,9" (1320×2868 veya 1290×2796) ya da 6,5" iPhone boyutu, 3–10 adet. Öneri sırası: ana ekran (odalar), oda ekranı + "Şimdi oldu!", ortak tahta (çok renkli), ısı haritası, rozetler, oda oluşturma şablonları. Proje sahibinin iPhone modeli henüz bilinmiyor (Pro Max/Plus değilse boyut sorunu çözülmeli).
+7. ⬜ Sürüm sayfası (1.0): 5 dilde isim, alt başlık, tanıtım metni, açıklama, anahtar kelimeler (`store/app-store.md`, sınırlar kontrol edildi). Diller App Store Connect'te "Localizations" ile eklenir; birincil dil English (U.S.).
+8. ⬜ İnceleyici notu (`store/app-store.md` → "App Review notes"): önce telefonda "App Review demo" adlı bir oda oluşturulmalı, davet kodu notta `[DEMO CODE]` yerine yazılmalı. Bu oda yayından sonra da silinmemeli. İletişim bilgisi: Enes Günel, enesgunel@enesgunel.com, telefon.
+9. ⬜ Derleme 1.0.0 (2) sürüme eklenir, **Submit for Review**. İnceleme genelde 1–3 gün sürer. Ret gelirse olası sebepler: kural 1.2 (kullanıcı içeriği; moderasyon var), 4.2 (az işlev), 5.1.1 (hesap silme; Ayarlar'da var).
+
+**Sonra:**
+- Google Play: geliştirici hesabı, yeni kişisel hesapta 12 test kullanıcısı ile 14 günlük kapalı test zorunlu, veri güvenliği formu, web'den hesap silme talep sayfası (henüz yok).
+- timegami.com'u Firebase Hosting'e özel alan adı olarak bağlamak.
+- Avukat soruları (bkz. Gizlilik / KVKK).
+- Lint hatalarının temizliği, hesap bağlama (Apple/Google).
+- Kod değişikliği gerekirse yeni derleme: `npx eas-cli build --platform ios --profile production` ve `npx eas-cli submit --platform ios --latest`. Derleme numarası otomatik artar.
+
+**Doğrulananlar:**
+- 112 test (`npm test`), `npx tsc --noEmit` hatasız, `npx expo-doctor` 21/21.
+- Firestore kuralları gerçek projede uçtan uca test edildi: oluşturma, katılma, kayıt, ayrılma, sahiplik devri, silme, oyuncu çıkarma.
 
 **Bilinen ortam notları:**
 - `npx expo start --tunnel`: `@expo/ngrok` global kurulunca Expo bulamıyordu; projeye devDependency olarak eklendi. Buna rağmen tünel `failed to start tunnel` ile açılmadı (ngrok.exe çalışıyor; sebep ngrok servisi/güvenlik duvarı/ağ olabilir). Alternatif: aynı Wi-Fi veya bilgisayarın mobil hotspot'u.
