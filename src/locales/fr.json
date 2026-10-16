@@ -30,7 +30,7 @@
   "create": {
     "title": "Nouveau défi",
     "name": "Nom du défi",
-    "namePlaceholder": "ex. Faire pipi à chaque minute",
+    "namePlaceholder": "ex. Faire pipi à chaque minute de la journée",
     "emoji": "Icône",
     "template": "Grille",
     "kind": "Type",

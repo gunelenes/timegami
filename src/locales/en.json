@@ -30,7 +30,7 @@
   "create": {
     "title": "New challenge",
     "name": "Challenge name",
-    "namePlaceholder": "e.g. Pee every minute",
+    "namePlaceholder": "e.g. Pee at every minute of the day",
     "emoji": "Icon",
     "template": "Grid",
     "kind": "Type",

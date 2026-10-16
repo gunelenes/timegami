@@ -30,7 +30,7 @@
   "create": {
     "title": "Yeni challenge",
     "name": "Challenge adı",
-    "namePlaceholder": "ör. Her dakika işemek",
+    "namePlaceholder": "ör. Günün her dakikasında işemek",
     "emoji": "İkon",
     "template": "Izgara",
     "kind": "Tür",

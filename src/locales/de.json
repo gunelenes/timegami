@@ -30,7 +30,7 @@
   "create": {
     "title": "Neue Challenge",
     "name": "Name der Challenge",
-    "namePlaceholder": "z. B. Jede Minute pinkeln",
+    "namePlaceholder": "z. B. Zu jeder Minute des Tages pinkeln",
     "emoji": "Symbol",
     "template": "Raster",
     "kind": "Art",

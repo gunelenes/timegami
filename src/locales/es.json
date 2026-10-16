@@ -30,7 +30,7 @@
   "create": {
     "title": "Nuevo reto",
     "name": "Nombre del reto",
-    "namePlaceholder": "p. ej. Hacer pis cada minuto",
+    "namePlaceholder": "p. ej. Hacer pis en cada minuto del día",
     "emoji": "Icono",
     "template": "Cuadrícula",
     "kind": "Tipo",
